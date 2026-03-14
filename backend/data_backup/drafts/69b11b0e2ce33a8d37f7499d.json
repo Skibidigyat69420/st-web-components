@@ -1,0 +1,13 @@
+{
+  "_id": "69b11b0e2ce33a8d37f7499d",
+  "title": "Test Article",
+  "slug": "test-article",
+  "content": "hello world",
+  "category": "69b11b0e2ce33a8d37f7499b",
+  "featuredImage": "no-photo.jpg",
+  "author": "Sound Thesis Admin",
+  "status": "Published",
+  "publicationDate": "2026-03-11T00:00:00.000Z",
+  "createdAt": "2026-03-11T07:34:38.441Z",
+  "__v": 0
+}

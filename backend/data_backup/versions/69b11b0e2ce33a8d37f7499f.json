@@ -1,0 +1,12 @@
+{
+  "_id": "69b11b0e2ce33a8d37f7499f",
+  "documentId": "69b11b0e2ce33a8d37f7499d",
+  "documentModel": "Draft",
+  "title": "Test Article",
+  "content": "hello world",
+  "category": "69b11b0e2ce33a8d37f7499b",
+  "status": "Published",
+  "versionType": "autosave",
+  "createdAt": "2026-03-11T07:34:38.468Z",
+  "__v": 0
+}

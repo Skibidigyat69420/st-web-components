@@ -1,0 +1,54 @@
+[
+  {
+    "_id": "69ae4d06ffebe06c03ccbbf3",
+    "title": "Integration Test Article 1773030661956",
+    "slug": "integration-test-article-1773030661956",
+    "content": "This article was created by the integrated test script.",
+    "category": "69aa7488c6dbfd9f9dc7421a",
+    "featuredImage": "no-photo.jpg",
+    "author": "Sound Thesis Admin",
+    "status": "Published",
+    "publicationDate": "2026-03-09T04:31:02.035Z",
+    "createdAt": "2026-03-09T04:31:02.035Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ae4d06ffebe06c03ccbc03",
+    "title": "Institutional Investment Trends 2024",
+    "slug": "institutional-investment-trends-2024",
+    "content": "<p>Detailed analysis of institutional investment shifts...</p>",
+    "category": "69ae4d06ffebe06c03ccbc00",
+    "featuredImage": "no-photo.jpg",
+    "author": "Sound Thesis Admin",
+    "status": "Published",
+    "publicationDate": "2024-03-08T00:00:00.000Z",
+    "createdAt": "2026-03-09T04:31:02.255Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ae4d06ffebe06c03ccbc09",
+    "title": "Sound Thesis: The Future of Wealth Management",
+    "slug": "sound-thesis:-the-future-of-wealth-management",
+    "content": "<p>How technology is reshaping the industry...</p>",
+    "category": "69ae4d06ffebe06c03ccbc06",
+    "featuredImage": "no-photo.jpg",
+    "author": "Sound Thesis Admin",
+    "status": "Published",
+    "publicationDate": "2024-03-07T00:00:00.000Z",
+    "createdAt": "2026-03-09T04:31:02.363Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ae4d220c2fb7968c884beb",
+    "title": "Integration Test Article 1773030690085",
+    "slug": "integration-test-article-1773030690085",
+    "content": "This article was created by the integrated test script.",
+    "category": "69aa7488c6dbfd9f9dc7421a",
+    "featuredImage": "no-photo.jpg",
+    "author": "Sound Thesis Admin",
+    "status": "Published",
+    "publicationDate": "2026-03-09T04:31:30.118Z",
+    "createdAt": "2026-03-09T04:31:30.118Z",
+    "__v": 0
+  }
+]

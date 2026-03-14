@@ -1,0 +1,11 @@
+{
+  "_id": "69b02a04380cdb8802af31a1",
+  "name": "Individual Lead Validation",
+  "email": "individual@test.com",
+  "phone": "",
+  "company": "",
+  "message": "This is a clean JSON payload to test the individual file saving functionality.",
+  "status": "Pending",
+  "createdAt": "2026-03-10T14:26:12.662Z",
+  "__v": 0
+}

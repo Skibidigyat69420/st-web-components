@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "69aa7488c6dbfd9f9dc7421a",
+    "name": "Test Category",
+    "createdAt": "2026-03-06T06:30:32.756Z",
+    "__v": 0
+  },
+  {
+    "_id": "69aa75e8b8d7a3224df35bc7",
+    "name": "General",
+    "createdAt": "2026-03-06T06:36:24.528Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ae4d06ffebe06c03ccbc00",
+    "name": "Market Analysis",
+    "createdAt": "2026-03-09T04:31:02.167Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ae4d06ffebe06c03ccbc06",
+    "name": "Insights",
+    "createdAt": "2026-03-09T04:31:02.353Z",
+    "__v": 0
+  }
+]

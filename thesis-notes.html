@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Thesis Notes - Democratized financial research covering macroeconomics, asset allocation, and market dynamics. Download, review, apply.">
+    <title>Thesis Notes | Democratized Research Repository</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">Sound Thesis</a>
+            <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__links">
+                <li><a href="index.html" class="nav__link">Home</a></li>                <li><a href="thesis-notes.html" class="nav__link nav__link--active">Thesis Notes</a></li>
+                <li><a href="services.html" class="nav__link">Services</a></li>
+                <li><a href="why-us.html" class="nav__link">Why We Exist</a></li>
+                <li><a href="calculators.html" class="nav__link">Calculators</a></li>
+
+            </ul>
+
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 55vh;">
+        <div class="hero__content">
+            <h1 class="hero__title">Thesis Notes</h1>
+            <p class="hero__tagline">Democratized financial research. Download. Review. Apply.</p>
+            <div class="hero__divider"></div>
+            <p class="hero__description">
+                Our complete research library - models, methodologies, and market analysis - published openly for
+                verification and application.
+            </p>
+        </div>
+    </section>
+    <!-- Macro Dashboard Widget -->
+    <section class="section" style="padding-bottom: 0;">
+        <div class="container">
+            <div class="macro-dashboard interactive-widget">
+                <div class="macro-header">
+                    <h3 class="macro-title">Live Macro Indicators</h3>
+                    <span class="macro-status"><span class="pulse-dot"></span> Live Updates</span>
+                </div>
+                <div class="macro-grid">
+                    <div class="macro-card">
+                        <div class="macro-label">NIFTY 50</div>
+                        <div class="macro-value" id="macroNifty">22,419.55</div>
+                        <div class="macro-change positive">+0.65% <svg width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3">
+                                <path d="M5 15l7-7 7 7" />
+                            </svg></div>
+                    </div>
+                    <div class="macro-card">
+                        <div class="macro-label">10Y G-Sec Yield</div>
+                        <div class="macro-value" id="macroYield">7.12%</div>
+                        <div class="macro-change negative">+0.02% <svg width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3">
+                                <path d="M5 15l7-7 7 7" />
+                            </svg></div>
+                    </div>
+                    <div class="macro-card">
+                        <div class="macro-label">USD/INR</div>
+                        <div class="macro-value" id="macroUsd">83.34</div>
+                        <div class="macro-change positive">-0.11% <svg width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3">
+                                <path d="M19 9l-7 7-7-7" />
+                            </svg></div>
+                    </div>
+                    <div class="macro-card">
+                        <div class="macro-label">Inflation (CPI)</div>
+                        <div class="macro-value" id="macroCpi">4.85%</div>
+                        <div class="macro-change neutral">0.00% <svg width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="3">
+                                <path d="M5 12h14" />
+                            </svg></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Research Grid -->
+    <section class="section">
+        <div class="container">
+            <!-- Filters -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Research</button>
+                <button class="filter-btn" data-filter="macroeconomic">Macroeconomic</button>
+                <button class="filter-btn" data-filter="asset-allocation">Asset Allocation</button>
+                <button class="filter-btn" data-filter="geopolitics">Geopolitics</button>
+                <button class="filter-btn" data-filter="markets">Markets</button>
+            </div>
+
+            <!-- Research Grid -->
+            <div class="grid grid--2">
+                <!-- Featured Research -->
+                <article class="card research-card" data-category="macroeconomic" style="grid-column: span 2;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: var(--space-md);">
+                        <div style="flex: 1; min-width: 300px;">
+                            <span class="research-card__date">December 18, 2024 • Featured</span>
+                            <h3 class="research-card__title" style="font-size: var(--h3-size);">Global Capital Flows: A
+                                Systematic Analysis</h3>
+                            <div class="research-card__tags">
+                                <span class="tag tag--primary">Macroeconomic</span>
+                                <span class="tag">Democratized Access</span>
+                            </div>
+                            <p style="margin-bottom: var(--space-md);">
+                                An in-depth analysis of how emerging market dynamics are reshaping traditional
+                                investment paradigms.
+                                We examine structural changes in global savings patterns, the evolving role of the
+                                dollar,
+                                and provide our systematic framework for capital flow analysis.
+                            </p>
+                            <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
+                                <a href="#" class="btn btn--primary btn--small">
+                                    Download PDF
+                                </a>
+                                <a href="#" class="btn btn--secondary btn--small"
+                                    style="display: flex; align-items: center; gap: 8px;">
+                                    View Data Sources
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card research-card" data-category="asset-allocation">
+                    <span class="research-card__date">December 10, 2024</span>
+                    <h4 class="research-card__title">Fixed Income in Higher Rate Environments</h4>
+                    <div class="research-card__tags">
+                        <span class="tag">Asset Allocation</span>
+                    </div>
+                    <p class="text-small text-muted mb-md">
+                        Strategic considerations for bond portfolios as markets adjust to elevated interest rates.
+                        Duration management, credit selection, and income generation strategies.
+                    </p>
+                    <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+                        <a href="#" class="research-card__link">Download PDF →</a>
+                    </div>
+                </article>
+
+                <article class="card research-card" data-category="geopolitics">
+                    <span class="research-card__date">December 2, 2024</span>
+                    <h4 class="research-card__title">Geopolitical Risk: A Systematic Framework</h4>
+                    <div class="research-card__tags">
+                        <span class="tag">Geopolitics</span>
+                    </div>
+                    <p class="text-small text-muted mb-md">
+                        A structured approach to incorporating geopolitical considerations into investment
+                        decision-making.
+                        Includes our risk assessment model and monitoring framework.
+                    </p>
+                    <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+                        <a href="#" class="research-card__link">Download PDF →</a>
+                    </div>
+                </article>
+
+                <article class="card research-card" data-category="markets">
+                    <span class="research-card__date">November 22, 2024</span>
+                    <h4 class="research-card__title">Equity Market Concentration: Analysis</h4>
+                    <div class="research-card__tags">
+                        <span class="tag">Markets</span>
+                    </div>
+                    <p class="text-small text-muted mb-md">
+                        Analyzing the implications of unprecedented market concentration in mega-cap stocks.
+                        Historical parallels and positioning strategies.
+                    </p>
+                    <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+                        <a href="#" class="research-card__link">Download PDF →</a>
+                    </div>
+                </article>
+
+                <article class="card research-card" data-category="macroeconomic">
+                    <span class="research-card__date">November 15, 2024</span>
+                    <h4 class="research-card__title">Central Bank Policy Divergence</h4>
+                    <div class="research-card__tags">
+                        <span class="tag">Macroeconomic</span>
+                    </div>
+                    <p class="text-small text-muted mb-md">
+                        As major central banks chart different paths, we examine currency implications,
+                        carry trade dynamics, and cross-border capital flow patterns.
+                    </p>
+                    <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+                        <a href="#" class="research-card__link">Download PDF →</a>
+                    </div>
+                </article>
+
+                <article class="card research-card" data-category="asset-allocation">
+                    <span class="research-card__date">November 8, 2024</span>
+                    <h4 class="research-card__title">Alternative Assets: Portfolio Role</h4>
+                    <div class="research-card__tags">
+                        <span class="tag">Asset Allocation</span>
+                    </div>
+                    <p class="text-small text-muted mb-md">
+                        A comprehensive review of alternative investments - from private credit to real assets -
+                        and their role in modern portfolio construction.
+                    </p>
+                    <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+                        <a href="#" class="research-card__link">Download PDF →</a>
+                    </div>
+                </article>
+
+                <article class="card research-card" data-category="geopolitics">
+                    <span class="research-card__date">October 28, 2024</span>
+                    <h4 class="research-card__title">Supply Chain Resilience Analysis</h4>
+                    <div class="research-card__tags">
+                        <span class="tag">Geopolitics</span>
+                    </div>
+                    <p class="text-small text-muted mb-md">
+                        How geopolitical tensions are reshaping global supply chains and creating both
+                        risks and opportunities for investors.
+                    </p>
+                    <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+                        <a href="#" class="research-card__link">Download PDF →</a>
+                    </div>
+                </article>
+
+                <article class="card research-card" data-category="markets">
+                    <span class="research-card__date">October 18, 2024</span>
+                    <h4 class="research-card__title">Earnings Quality: A Factor Analysis</h4>
+                    <div class="research-card__tags">
+                        <span class="tag">Markets</span>
+                    </div>
+                    <p class="text-small text-muted mb-md">
+                        In an environment of elevated valuations, earnings quality becomes paramount.
+                        Our framework for identifying sustainable profitability.
+                    </p>
+                    <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+                        <a href="#" class="research-card__link">Download PDF →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-xl">
+                <a href="#" class="btn btn--secondary">Load More Research</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive CTA -->
+    <section class="section section--white">
+        <div class="container text-center">
+            <h2 class="mb-md">Access Complete Archive</h2>
+            <div class="section-header__divider" style="margin: 0 auto var(--space-md);"></div>
+            <p class="text-muted" style="max-width: 600px; margin: 0 auto var(--space-lg);">
+                Our full research library dating back to 2018, including special reports,
+                annual outlooks, and deep-dive sector analyses. All democratized, all downloadable.
+            </p>
+            <a href="#" class="btn btn--primary">View Complete Archive</a>
+        </div>
+    </section>
+
+    <!-- Helpful Resources Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-header__title">Helpful Resources</h2>
+                <div class="section-header__divider"></div>
+                <p class="text-muted">Tools and knowledge to support your investment journey.</p>
+            </div>
+
+            <div class="grid grid--2">
+                <!-- Documents & Templates -->
+                <div class="card">
+                    <h3 class="card__title">Documents & Templates</h3>
+                    <p class="text-small text-muted mb-md">Downloadable resources to structure your analysis.</p>
+                    <ul class="feature-list">
+                        <li class="feature-list__item">
+                            <svg class="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <a href="#" class="text-link">Investment Checklist.pdf</a>
+                        </li>
+                        <li class="feature-list__item">
+                            <svg class="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <a href="#" class="text-link">Risk Assessment Template.xlsx</a>
+                        </li>
+                        <li class="feature-list__item">
+                            <svg class="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <a href="#" class="text-link">Portfolio Rebalancing Sheet.xlsx</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Book Recommendations -->
+                <div class="card">
+                    <h3 class="card__title">Book Recommendations</h3>
+                    <p class="text-small text-muted mb-md">Foundational texts that shape our investment philosophy.</p>
+                    <ul class="feature-list">
+                        <li class="feature-list__item">
+                            <svg class="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                            <span><strong>Thinking, Fast and Slow</strong> - Daniel Kahneman</span>
+                        </li>
+                        <li class="feature-list__item">
+                            <svg class="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                            <span><strong>The Most Important Thing</strong> - Howard Marks</span>
+                        </li>
+                        <li class="feature-list__item">
+                            <svg class="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                            <span><strong>Poor Charlie's Almanack</strong> - Charlie Munger</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="nav__logo">Sound Thesis</div>
+                    <p>Democratized financial research and accessible wealth management. No minimum investment barriers.
+                    </p>
+                </div>
+                <div class="footer__links">
+                    <h4>Research</h4>
+                    <a href="thesis-notes.html">Thesis Notes</a>                </div>
+                <div class="footer__links">
+                    <h4>Services</h4>
+                    <a href="services.html">Wealth Management</a>
+                    <a href="why-us.html">Why We Exist</a>
+                </div>
+                <div class="footer__links">
+                    <h4>Connect</h4>
+                    <a href="mailto:research@soundthesis.com">research@soundthesis.com</a>
+                    <a href="schedule.html">Schedule Consultation</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Sound Thesis. All rights reserved.</p>
+                <p>Democratized Research. Transparent Wealth Management.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/widgets.js"></script>
+
+</body>
+
+</html>

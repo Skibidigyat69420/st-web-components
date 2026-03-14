@@ -1,0 +1,11 @@
+{
+  "_id": "69b136ce905f9fc185640451",
+  "name": "Resilience Test",
+  "email": "resilience@test.com",
+  "phone": "",
+  "company": "",
+  "message": "Testing if lead creation works after the second stabilization attempt with ephemeral storage.",
+  "status": "Pending",
+  "createdAt": "2026-03-11T09:33:02.610Z",
+  "__v": 0
+}

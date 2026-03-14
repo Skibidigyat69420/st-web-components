@@ -1,0 +1,11 @@
+{
+    "ignore": [
+        "db_data/**",
+        "data_backup/**",
+        "public/uploads/**",
+        "articles/**",
+        "*.test.js",
+        "*.spec.js"
+    ],
+    "delay": "1000"
+}
