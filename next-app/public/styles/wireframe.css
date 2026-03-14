@@ -1,0 +1,191 @@
+/* ============================================
+   Modern Wireframe Mode CSS
+   ============================================ */
+
+:root {
+  --wf-bg: #F8FAFC;
+  --wf-skeleton: #E2E8F0;
+  --wf-skeleton-dark: #CBD5E1;
+  --wf-border: #94A3B8;
+  --wf-accent: #3B82F6;
+  --wf-text-redacted: #E2E8F0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif !important;
+  color: transparent !important;
+  background-color: var(--wf-bg) !important;
+}
+
+/* 1. Modern Skeleton Text Redaction */
+p,
+span,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td,
+th,
+strong,
+em,
+blockquote {
+  color: transparent !important;
+  background-color: var(--wf-skeleton) !important;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background-size: 200% 100%;
+  animation: skeletonShow 1.5s infinite;
+  border-radius: 6px;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  display: inline-block;
+  margin-bottom: 4px;
+  line-height: normal;
+}
+
+@keyframes skeletonShow {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* 2. Sleek Section Outlines */
+section,
+header,
+footer,
+nav,
+article,
+.card,
+.container,
+.bento-item,
+.glass-panel {
+  border: 1px dashed var(--wf-border) !important;
+  border-radius: 16px !important;
+  position: relative;
+  background: #FFFFFF !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 3. Modern Wireframe Labels */
+.wf-label,
+nav::before,
+footer::before,
+section::before,
+.card::before,
+.bento-item::before,
+.hero::before {
+  color: #FFFFFF !important;
+  background-color: var(--wf-accent) !important;
+  font-size: 10px !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 4px 8px !important;
+  border-radius: 0 0 8px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  text-transform: uppercase;
+  font-family: monospace !important;
+}
+
+nav::before {
+  content: "NAVIGATION/HEADER";
+}
+
+footer::before {
+  content: "FOOTER_BLOCK";
+}
+
+section::before {
+  content: "SECTION_CONTAINER";
+}
+
+.card::before {
+  content: "CARD_COMPONENT";
+}
+
+.hero::before {
+  content: "HERO_BLOCK";
+}
+
+.bento-item::before {
+  content: "BENTO_CELL";
+  background-color: #6366f1 !important;
+}
+
+/* 4. Wireframed Media / Icons */
+img,
+video,
+svg,
+iframe,
+.feature-icon-animated {
+  opacity: 1 !important;
+  filter: none !important;
+  background-color: #F1F5F9 !important;
+  border: 1px solid var(--wf-border) !important;
+  border-radius: 12px !important;
+  color: transparent !important;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img::after,
+svg::after {
+  content: "MEDIA";
+  color: var(--wf-border) !important;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: monospace !important;
+  background: none !important;
+}
+
+/* 5. Buttons & Interactive Elements */
+.btn,
+button,
+.button,
+input,
+textarea,
+select {
+  background-color: var(--wf-bg) !important;
+  border: 2px solid var(--wf-accent) !important;
+  border-radius: 50px !important;
+  color: transparent !important;
+  position: relative;
+  box-shadow: none !important;
+}
+
+.btn::after,
+button::after {
+  content: "ACTION";
+  color: var(--wf-accent) !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: sans-serif !important;
+  background: none !important;
+}
+
+/* Hide raw dividers */
+.divider,
+.hero__divider,
+.section-header__divider {
+  background-color: var(--wf-skeleton) !important;
+  height: 2px !important;
+}
