@@ -224,12 +224,10 @@ const ServicesPage = () => {
               Wealth Management Services
             </span>
             <h1 className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-100 text-near-black mb-4">
-              Applying Our Research to Your Portfolio
+              Research-Driven Wealth Management
             </h1>
             <p className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-200 text-medium-gray mb-6">
-              Wealth management informed by institutional research methodologies.
-              We operate on a distribution basis—our research guides every
-              recommendation we make.
+              Helping investors preserve and grow wealth through rigorous research, disciplined investment frameworks, and highly qualified professionals.
             </p>
             <div className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-300 inline-flex items-center gap-2 px-4 py-2 bg-bg-light rounded-brand">
               <Shield className="w-4 h-4 text-navy" />

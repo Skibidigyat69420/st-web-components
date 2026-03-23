@@ -96,13 +96,11 @@ const PhilosophyPage = () => {
             <span className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 inline-block px-4 py-2 bg-navy/10 text-navy text-sm font-medium rounded-full mb-6">
               Our Philosophy
             </span>
-            <blockquote className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-100 text-3xl md:text-4xl lg:text-5xl font-semibold text-near-black leading-tight mb-8">
-              "Research should be a public good,
-              <br />
-              <span className="text-navy">not a private advantage.</span>"
-            </blockquote>
+            <h1 className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-100 text-3xl md:text-4xl lg:text-5xl font-semibold text-near-black leading-tight mb-8">
+              Why Sound Thinking Matters
+            </h1>
             <p className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-200 text-lg text-medium-gray max-w-2xl mx-auto">
-              Our Philosophy of Democratized Finance
+              Our Philosophy: Institutional research available to every serious investor.
             </p>
           </div>
         </div>

@@ -103,14 +103,13 @@ const WhyUsPage = () => {
         <div className="container-brand">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <span className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 inline-block px-4 py-2 bg-navy/10 text-navy text-sm font-medium rounded-full mb-6">
-              Why SoundThesis
+              Why We Exist
             </span>
             <h1 className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-100 text-near-black mb-4">
-              The Problem We're Solving
+              The Need for Institutional Research
             </h1>
             <p className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-200 text-medium-gray">
-              For too long, quality financial research has been a privilege of
-              the wealthy. We're changing that.
+              Sound Thesis helps investors preserve and grow wealth through institutional research, disciplined processes, and highly qualified professionals.
             </p>
           </div>
 

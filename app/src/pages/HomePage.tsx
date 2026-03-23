@@ -86,16 +86,12 @@ const HomePage = () => {
               </span>
             </div>
             <h1 className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-100 text-near-black mb-6">
-              Democratizing
+              Research-Driven
               <br />
-              <span className="text-navy">Institutional-Grade</span>
-              <br />
-              Research
+              <span className="text-navy">Mutual Fund Distribution</span>
             </h1>
             <p className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-200 text-lg md:text-xl text-medium-gray mb-8 max-w-xl">
-              SoundThesis makes premium financial research—once exclusive to
-              ultra-high-net-worth investors—accessible to every serious
-              investor in India.
+              Helping investors preserve and grow wealth through rigorous research, disciplined investment frameworks, and highly qualified professionals.
             </p>
             <div className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-300 flex flex-col sm:flex-row gap-4">
               <Link to="/thesis-notes" className="btn-primary">
@@ -138,15 +134,15 @@ const HomePage = () => {
       </section>
 
       {/* Section 2: The SoundThesis Difference */}
+      {/* Section 2: Why We Exist */}
       <section className="section bg-white">
         <div className="container-brand">
           <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
             <h2 className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 text-near-black mb-4">
-              The SoundThesis Difference
+              Why We Exist
             </h2>
-            <p className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-100 text-medium-gray">
-              Six principles that define our approach to research and wealth
-              management.
+            <p className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-100 text-medium-gray text-center max-w-2xl mx-auto mb-12">
+              Mutual funds can build wealth. But with thousands of funds and many advisors, how do you know recommendations are truly made in your interest?
             </p>
           </div>
 

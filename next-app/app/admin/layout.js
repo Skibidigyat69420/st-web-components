@@ -242,7 +242,7 @@ export default function AdminLayout({ children }) {
           <div className="login-modal">
             <div className="login-lock"></div>
             <h2>Admin Access</h2>
-            <p className="subtitle">Authenticate to manage Sound Thesis</p>
+            <p className="subtitle">Authenticate to manage SoundThesis</p>
 
             {loginError && <div className="login-err">{loginError}</div>}
 

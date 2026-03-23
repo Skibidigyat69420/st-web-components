@@ -424,7 +424,7 @@ export default function SchedulePage() {
       {/*  Navigation  */}
       <nav className="nav" role="navigation" aria-label="Main navigation">
         <div className="nav__inner">
-          <a href="/" className="nav__logo">Sound Thesis</a>
+          <a href="/" className="nav__logo">SoundThesis</a>
           <button className="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
@@ -432,7 +432,7 @@ export default function SchedulePage() {
           </button>
           <ul className="nav__links">            <li><a href="/thesis-notes" className="nav__link">Thesis Notes</a></li>
             <li><a href="/services" className="nav__link">Services</a></li>
-            <li><a href="/why-us" className="nav__link">Why We Exist</a></li>
+            <li><a href="/about-us" className="nav__link">About us</a></li>
             <li><a href="/calculators" className="nav__link">Calculators</a></li>
             <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Schedule Consultation</a></li>
           </ul>
@@ -591,17 +591,18 @@ export default function SchedulePage() {
         <div className="container">
           <div className="footer__grid">
             <div className="footer__brand">
-              <div className="nav__logo">Sound Thesis</div>
-              <p>Institutional-grade wealth management powered by accessible research, fiduciary transparency, and
-                behavioral coaching.</p>
+              <div className="nav__logo">SoundThesis</div>
+              <p>Democratized financial research and accessible wealth management. No minimum investment barriers.</p>
             </div>
             <div className="footer__links">
-              <h4>Research</h4>
-              <a href="/thesis-notes">Thesis Notes</a>            </div>
+              <h4>RESEARCH</h4>
+              <a href="/thesis-notes">Thesis Notes</a>
+              <a href="/methodology">Methodology</a>
+            </div>
             <div className="footer__links">
               <h4>Services</h4>
               <a href="/services">Wealth Management</a>
-              <a href="/why-us">Why We Exist</a>
+              <a href="/about-us">About us</a>
             </div>
             <div className="footer__links">
               <h4>Connect</h4>
@@ -610,8 +611,8 @@ export default function SchedulePage() {
             </div>
           </div>
           <div className="footer__bottom">
-            <p>&copy; 2024 Sound Thesis. All rights reserved.</p>
-            <p>Fiduciary Alignment. Research-Driven. Behavioral Focus. Standardized Processes.</p>
+            <p>&copy; 2024 SoundThesis. All rights reserved.</p>
+            <p>Democratized Research. Transparent Wealth Management.</p>
           </div>
         </div>
       </footer>

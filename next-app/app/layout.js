@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Sound Thesis | Accessible Wealth Management",
+  title: "SoundThesis | Accessible Wealth Management",
   description: "Institutional-grade wealth management powered by accessible research, fiduciary transparency, and behavioral coaching.",
 };
 

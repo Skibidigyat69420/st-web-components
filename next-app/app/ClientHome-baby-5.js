@@ -9,7 +9,7 @@ export default function ClientHome() {
       {/*  Navigation  */}
       <nav className="nav" role="navigation" aria-label="Main navigation">
         <div className="nav__inner">
-          <a href="/" className="nav__logo">Sound Thesis</a>
+          <a href="/" className="nav__logo">SoundThesis</a>
           <button className="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
@@ -17,7 +17,7 @@ export default function ClientHome() {
           </button>
           <ul className="nav__links">            <li><a href="/thesis-notes" className="nav__link">Thesis Notes</a></li>
             <li><a href="/services" className="nav__link">Services</a></li>
-            <li><a href="/why-us" className="nav__link">Why We Exist</a></li>
+            <li><a href="/about-us" className="nav__link">About us</a></li>
             <li><a href="/calculators" className="nav__link">Calculators</a></li>
             <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Schedule Consultation</a></li>
 
@@ -52,7 +52,7 @@ export default function ClientHome() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
               >
-                Sound Thesis relies on four core pillars—fiduciary transparency, accessible research, behavioral coaching,
+                SoundThesis relies on four core pillars—fiduciary transparency, accessible research, behavioral coaching,
                 and standardized execution—to deliver an institutional-grade wealth management experience.
               </motion.p>
               <motion.div 
@@ -147,7 +147,7 @@ export default function ClientHome() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="section-header__title">Why Sound Thesis?</h2>
+            <h2 className="section-header__title">Why SoundThesis?</h2>
             <p className="text-muted">A paradigm shift in how wealth is managed and research is consumed.</p>
           </motion.div>
 
@@ -263,7 +263,7 @@ export default function ClientHome() {
                   "While mid-cap valuations appear stretched, large-cap financials continue to offer a margin of safety.
                   Selectivity is key in the current regime."
                 </blockquote>
-                <div className="insight-author">- Sound Thesis Research Desk</div>
+                <div className="insight-author">- SoundThesis Research Desk</div>
               </div>
             </motion.div>
           </motion.div>
@@ -386,7 +386,7 @@ export default function ClientHome() {
           >
             <h2 className="section-header__title">Latest Thesis</h2>
             <div className="section-header__divider"></div>
-            <p className="text-muted">Our most recent publications from the Sound Thesis repository.</p>
+            <p className="text-muted">Our most recent publications from the SoundThesis repository.</p>
           </motion.div>
           <motion.div 
             className="grid grid--3"
@@ -603,7 +603,7 @@ export default function ClientHome() {
               {/*  11. Complaints  */}
               <div className="faq-item">
                 <h4 style={{ "marginBottom": "var(--space-sm)" }}>How can I redress complaints?</h4>
-                <p className="text-muted">You can approach Sound Thesis first for an internal escalation and resolution. If
+                <p className="text-muted">You can approach SoundThesis first for an internal escalation and resolution. If
                   unresolved, you can
                   lodge a complaint with SEBI via the SCORES (SEBI Complaints Redress System) online platform.</p>
               </div>
@@ -624,7 +624,7 @@ export default function ClientHome() {
         <div className="container">
           <div className="footer__grid">
             <div className="footer__brand">
-              <div className="nav__logo">Sound Thesis</div>
+              <div className="nav__logo">SoundThesis</div>
               <p>Institutional-grade wealth management powered by accessible research, fiduciary transparency, and
                 behavioral coaching.</p>
             </div>
@@ -634,7 +634,7 @@ export default function ClientHome() {
             <div className="footer__links">
               <h4>Services</h4>
               <a href="/services">Wealth Management</a>
-              <a href="/why-us">Why We Exist</a>
+              <a href="/about-us">About us</a>
             </div>
             <div className="footer__links">
               <h4>Connect</h4>
@@ -643,7 +643,7 @@ export default function ClientHome() {
             </div>
           </div>
           <div className="footer__bottom">
-            <p>&copy; 2024 Sound Thesis. All rights reserved.</p>
+            <p>&copy; 2024 SoundThesis. All rights reserved.</p>
             <p>Fiduciary Alignment. Research-Driven. Behavioral Focus. Standardized Processes.</p>
           </div>
         </div>

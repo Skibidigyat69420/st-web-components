@@ -9,7 +9,7 @@ export default function ClientHome() {
       {/*  Navigation  */}
       <nav className="nav" role="navigation" aria-label="Main navigation">
         <div className="nav__inner">
-          <a href="/" className="nav__logo">Sound Thesis</a>
+          <a href="/" className="nav__logo">SoundThesis</a>
           <button className="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
@@ -17,7 +17,7 @@ export default function ClientHome() {
           </button>
           <ul className="nav__links">            <li><a href="/thesis-notes" className="nav__link">Thesis Notes</a></li>
             <li><a href="/services" className="nav__link">Services</a></li>
-            <li><a href="/why-us" className="nav__link">Why We Exist</a></li>
+            <li><a href="/about-us" className="nav__link">Why we exist</a></li>
             <li><a href="/calculators" className="nav__link">Calculators</a></li>
             <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Schedule Consultation</a></li>
 
@@ -35,19 +35,19 @@ export default function ClientHome() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ type: "spring", stiffness: 80, damping: 20, delay: 0.1 }}
             >
-              <span className="tag tag--primary mb-md"
-                style={{ "background": "rgba(212, 168, 77, 0.15)", "color": "#D4A84D", "border": "1px solid rgba(212, 168, 77, 0.3)" }}>Built
-                On
-                Four Core Pillars</span>
+              <p className="hero__tagline mb-md" style={{ "fontSize": "1.1rem", "fontWeight": "500", "color": "white", "opacity": "0.9", "letterSpacing": "0.5px" }}>Investor-first. Research-driven. Trusted experts.</p>
+              <div className="arn-badges-placeholder mb-lg" style={{ "minHeight": "40px", "display": "flex", "alignItems": "center", "gap": "15px" }}>
+                {/*  ARN Badges Placeholder  */}
+              </div>
               <motion.h1 
                 className="hero__title"
                 initial={{ opacity: 0, y: 40, rotateX: 15 }}
                 animate={{ opacity: 1, y: 0, rotateX: 0 }}
                 transition={{ type: "spring", stiffness: 100, damping: 15, delay: 0.3 }}
               >
-                Institutional-Grade<br />
-                <span style={{ "color": "#D4A84D" }}>Wealth Management</span><br />
-                Made Accessible
+                Research-Driven<br />
+                <span style={{ "color": "#D4A84D" }}>Mutual Fund</span><br />
+                Distribution
               </motion.h1>
               <motion.p 
                 className="hero__description" 
@@ -56,8 +56,7 @@ export default function ClientHome() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                Sound Thesis relies on four core pillars—fiduciary transparency, accessible research, behavioral coaching,
-                and standardized execution—to deliver an institutional-grade wealth management experience.
+                Helping investors preserve and grow wealth through rigorous research, disciplined investment frameworks, and highly qualified professionals.
               </motion.p>
               <motion.div 
                 className="hero__buttons" 
@@ -80,275 +79,31 @@ export default function ClientHome() {
         </div>
       </section>
 
-      {/*  Market Ticker Widget  */}
-      <div className="market-ticker-wrapper">
-        <div className="market-ticker">
-          <div className="ticker-content">
-            <span className="ticker-item"><span className="ticker-name">NIFTY 50</span> <span className="ticker-price">22,336.40</span>
-              <span className="ticker-change positive">▲ +0.52%</span></span>
-            <span className="ticker-item"><span className="ticker-name">SENSEX</span> <span className="ticker-price">73,651.35</span>
-              <span className="ticker-change positive">▲ +0.48%</span></span>
-            <span className="ticker-item"><span className="ticker-name">BANK NIFTY</span> <span
-              className="ticker-price">47,835.80</span> <span className="ticker-change negative">▼ -0.15%</span></span>
-            <span className="ticker-item"><span className="ticker-name">S&P 500</span> <span className="ticker-price">5,137.08</span>
-              <span className="ticker-change positive">▲ +0.80%</span></span>
-            <span className="ticker-item"><span className="ticker-name">NASDAQ</span> <span className="ticker-price">16,274.94</span>
-              <span className="ticker-change positive">▲ +1.14%</span></span>
-            <span className="ticker-item"><span className="ticker-name">GOLD</span> <span className="ticker-price">₹63,450</span> <span
-              className="ticker-change positive">▲ +0.22%</span></span>
-            {/*  Duplicate for seamless scroll  */}
-            <span className="ticker-item"><span className="ticker-name">NIFTY 50</span> <span className="ticker-price">22,336.40</span>
-              <span className="ticker-change positive">▲ +0.52%</span></span>
-            <span className="ticker-item"><span className="ticker-name">SENSEX</span> <span className="ticker-price">73,651.35</span>
-              <span className="ticker-change positive">▲ +0.48%</span></span>
-            <span className="ticker-item"><span className="ticker-name">BANK NIFTY</span> <span
-              className="ticker-price">47,835.80</span> <span className="ticker-change negative">▼ -0.15%</span></span>
-            <span className="ticker-item"><span className="ticker-name">S&P 500</span> <span className="ticker-price">5,137.08</span>
-              <span className="ticker-change positive">▲ +0.80%</span></span>
-            <span className="ticker-item"><span className="ticker-name">NASDAQ</span> <span className="ticker-price">16,274.94</span>
-              <span className="ticker-change positive">▲ +1.14%</span></span>
-            <span className="ticker-item"><span className="ticker-name">GOLD</span> <span className="ticker-price">₹63,450</span> <span
-              className="ticker-change positive">▲ +0.22%</span></span>
-          </div>
-        </div>
-      </div>
 
-      {/*  Value Proposition - Bento Box Layout  */}
-      <section className="section">
+      {/*  About us Section  */}
+      <section className="section bg-light">
         <div className="container">
           <motion.div 
-            className="section-header"
+            className="why-we-exist-content"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
+            style={{ "maxWidth": "800px", "margin": "0 auto", "textAlign": "center" }}
           >
-            <h2 className="section-header__title">Why Sound Thesis?</h2>
-            <p className="text-muted">A paradigm shift in how wealth is managed and research is consumed.</p>
-          </motion.div>
-
-          <motion.div 
-            className="grid grid--2"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
-            }}
-          >
-            <motion.div variants={{ hidden: { opacity: 0, y: 30, scale: 0.95 }, visible: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 100, damping: 15 } } }} className="card card--center hover-lift"
-              style={{ "background": "linear-gradient(145deg, var(--color-navy) 0%, var(--color-navy-dark) 100%)", "color": "white" }}>
-              <h3 style={{ "color": "white" }}>Fiduciary Responsibility<br />& Transparency</h3>
-              <p style={{ "color": "rgba(255,255,255,0.7)", "fontSize": "15px" }}>Clear, honest pricing with no hidden costs for our
-                wealth services.</p>
-            </motion.div>
-
-            <motion.div variants={{ hidden: { opacity: 0, y: 30, scale: 0.95 }, visible: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 100, damping: 15 } } }} className="card card--center hover-lift" style={{ "background": "var(--color-bg-secondary)" }}>
-              <h3 style={{ "color": "var(--color-navy)" }}>Research-Driven</h3>
-              <p className="text-muted text-small">All our models and methodologies are published openly. Transparent,
-                verifiable, and freely accessible.</p>
-            </motion.div>
-
-            <motion.div variants={{ hidden: { opacity: 0, y: 30, scale: 0.95 }, visible: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 100, damping: 15 } } }} className="card card--center hover-lift" style={{ "background": "var(--color-bg-secondary)" }}>
-              <h3 style={{ "color": "var(--color-navy)" }}>High-Quality Advisors<br />& Behavioral Focus</h3>
-              <p className="text-muted text-small">Expert coaching to prevent emotional decisions and compounding errors over
-                your investment journey.</p>
-            </motion.div>
-
-            <motion.div variants={{ hidden: { opacity: 0, y: 30, scale: 0.95 }, visible: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 100, damping: 15 } } }} className="card card--center hover-lift"
-              style={{ "background": "linear-gradient(145deg, var(--color-navy) 0%, var(--color-navy-dark) 100%)", "color": "white" }}>
-              <h3 style={{ "color": "white" }}>Standardized<br />Processes</h3>
-              <p style={{ "color": "rgba(255,255,255,0.7)", "fontSize": "15px" }}>Reliable, systematized execution ensuring every
-                client receives institutional-grade wealth management.</p>
-            </motion.div>
+            <h2 className="section-header__title mb-xl">Why we exist</h2>
+            <div className="paragraph-container" style={{ "fontSize": "1.15rem", "lineHeight": "1.8", "color": "var(--color-navy)", "opacity": "0.9" }}>
+              <p className="mb-lg">Mutual funds can build wealth.</p>
+              <p className="mb-lg">But with thousands of funds and many advisors, how do you know recommendations are truly made in your interest?</p>
+              <p className="mb-lg">As educators who have trained thousands of professionals for careers in investment research, portfolio management, and wealth management, we’ve closely seen how difficult it is for investors to know and trust that the investment options presented to them are backed by rigorous research and informed professional judgement rather than sales incentives.</p>
+              <p className="mb-lg" style={{ "fontWeight": "600", "color": "var(--color-navy-dark)" }}>SoundThesis combines institutional research, disciplined processes, and highly-qualified professionals — so you can invest with confidence.</p>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/*  Interactive Tools & Insights  */}
-      <section className="section section--white">
-        <div className="container">
-          <motion.div 
-            className="section-header"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="section-header__title">Interactive Tools & Insights</h2>
-            <div className="section-header__divider"></div>
-            <p className="text-muted">Engage with our models and get daily market sentiment.</p>
-          </motion.div>
-          <motion.div 
-            className="grid grid--2"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, staggerChildren: 0.2 }}
-          >
-            {/*  SIP Calculator Teaser  */}
-            <motion.div className="card interactive-widget calc-widget-teaser" whileHover={{ translateY: -5 }}>
-              <div className="widget-header">
-                <h3>Wealth Projection</h3>
-                <span className="tag tag--primary">Mini Calc</span>
-              </div>
-              <p className="text-small text-muted mb-xl">Visualize your potential returns over time. Adjust the slider to see
-                how small consistent investments grow.</p>
 
-              <div className="input-group">
-                <label htmlFor="teaserSipAmount">Monthly SIP Amount: ₹<span id="teaserSipAmountDisplay">10,000</span></label>
-                <input type="range" className="form-range" id="teaserSipAmount" min="1000" max="100000" step="1000"
-                  defaultValue="10000" />
-              </div>
-              <div className="input-group">
-                <label htmlFor="teaserSipYears">Duration: <span id="teaserSipYearsDisplay">10</span> Years</label>
-                <input type="range" className="form-range" id="teaserSipYears" min="1" max="30" step="1" defaultValue="10" />
-              </div>
 
-              <div className="teaser-result">
-                <div className="result-label">Projected Corpus (at 12% p.a.)</div>
-                <div className="result-value" id="teaserProjValue">₹23,23,391</div>
-              </div>
-
-              <div className="text-center mt-lg">
-                <a href="/calculators" className="btn btn--primary btn--small">View Full Calculators</a>
-              </div>
-            </motion.div>
-
-            {/*  Daily Insight / Sentiment  */}
-            <motion.div className="card interactive-widget insight-widget" whileHover={{ translateY: -5 }}>
-              <div className="widget-header">
-                <h3>Market Sentiment</h3>
-                <span className="tag">Daily Update</span>
-              </div>
-
-              <div className="insight-content">
-                <div className="sentiment-indicator">
-                  <div className="sentiment-gauge">
-                    <div className="sentiment-needle" style={{ "transform": "rotate(20deg)" }}></div>
-                  </div>
-                  <div className="sentiment-labels">
-                    <span>Fear</span>
-                    <span className="sentiment-current bullish">Cautiously Bullish</span>
-                    <span>Greed</span>
-                  </div>
-                </div>
-
-                <blockquote className="insight-quote">
-                  "While mid-cap valuations appear stretched, large-cap financials continue to offer a margin of safety.
-                  Selectivity is key in the current regime."
-                </blockquote>
-                <div className="insight-author">- Sound Thesis Research Desk</div>
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/*  Two Column Cards Section  */}
-      <section className="section section--secondary">
-        <div className="container">
-          <motion.div 
-            className="grid grid--2"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
-            }}
-          >
-            {/*  Learn Card  */}
-            <motion.div 
-              className="card"
-              variants={{ hidden: { opacity: 0, x: -40, scale: 0.95 }, visible: { opacity: 1, x: 0, scale: 1, transition: { type: "spring", stiffness: 90, damping: 16 } } }}
-              whileHover={{ scale: 1.02 }}
-            >
-              <h3 className="card__title">Accessible Research</h3>
-              <p className="card__description">
-                Access our open models and transparent methodologies. Understand our
-                decisions and remove bias with a fully published research library.
-              </p>
-              <ul className="feature-list">
-                <li className="feature-list__item">
-                  <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Freely accessible methodologies</span>
-                </li>
-                <li className="feature-list__item">
-                  <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Data-driven & verifiable models</span>
-                </li>
-                <li className="feature-list__item">
-                  <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Continuous public scrutiny</span>
-                </li>
-                <li className="feature-list__item">
-                  <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>No proprietary black boxes</span>
-                </li>
-              </ul>
-              <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="/thesis-notes" className="btn btn--primary">Browse Research</motion.a>
-            </motion.div>
-
-            {/*  Invest Card  */}
-            <motion.div 
-              className="card"
-              variants={{ hidden: { opacity: 0, x: 40, scale: 0.95 }, visible: { opacity: 1, x: 0, scale: 1, transition: { type: "spring", stiffness: 90, damping: 16 } } }}
-              whileHover={{ scale: 1.02 }}
-            >
-              <h3 className="card__title">Comprehensive Wealth Services</h3>
-              <p className="card__description">
-                Apply our research with high-quality advisors. We implement standardized strategies
-                with clear pricing and dedicated behavioral coaching.
-              </p>
-              <ul className="feature-list">
-                <li className="feature-list__item">
-                  <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Fiduciary-aligned pricing</span>
-                </li>
-                <li className="feature-list__item">
-                  <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Expert behavioral coaching</span>
-                </li>
-                <li className="feature-list__item">
-                  <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Systematized execution</span>
-                </li>
-                <li className="feature-list__item">
-                  <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>No hidden costs or minimums</span>
-                </li>
-              </ul>
-              <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="/schedule" className="btn btn--primary">Schedule Consultation</motion.a>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
 
       {/*  Latest Research  */}
       <section className="section">
@@ -362,7 +117,7 @@ export default function ClientHome() {
           >
             <h2 className="section-header__title">Latest Thesis</h2>
             <div className="section-header__divider"></div>
-            <p className="text-muted">Our most recent publications from the Sound Thesis repository.</p>
+            <p className="text-muted">Our most recent publications from the SoundThesis repository.</p>
           </motion.div>
           <motion.div 
             className="grid grid--3"
@@ -455,10 +210,9 @@ export default function ClientHome() {
             transition={{ duration: 0.8 }}
           >
             <blockquote className="quote">
-              "We believe that transparent, rigorous research leads to better investment outcomes.
-              By opening our methodologies, we invite scrutiny - and that makes us better."
+              "Sound investing begins with sound thinking — disciplined decisions grounded in research and focused on long-term wealth."
             </blockquote>
-            <p className="quote__author">- Our Core Belief</p>
+            <p className="quote__author">- OUR CORE BELIEF</p>
           </motion.div>
         </div>
       </section>
@@ -473,10 +227,10 @@ export default function ClientHome() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2>Start With Our Approach</h2>
+            <h2>Start by Reading Our Research</h2>
+            <p className="cta-tagline mb-md" style={{ "fontSize": "1.1rem", "fontWeight": "500", "color": "rgba(255,255,255,0.8)", "letterSpacing": "0.5px" }}>Investor-first. Research-driven. Trusted experts.</p>
             <p>
-              Explore our accessible research models to understand our methodology before committing.
-              No signup required. No barriers.
+              The best way to understand SoundThesis is to see how we approach investing. Explore our Thesis Notes and see if our approach resonates with you.
             </p>
             <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="/thesis-notes" className="btn btn--white">Browse Thesis Notes</motion.a>
           </motion.div>
@@ -579,7 +333,7 @@ export default function ClientHome() {
               {/*  11. Complaints  */}
               <div className="faq-item">
                 <h4 style={{ "marginBottom": "var(--space-sm)" }}>How can I redress complaints?</h4>
-                <p className="text-muted">You can approach Sound Thesis first for an internal escalation and resolution. If
+                <p className="text-muted">You can approach SoundThesis first for an internal escalation and resolution. If
                   unresolved, you can
                   lodge a complaint with SEBI via the SCORES (SEBI Complaints Redress System) online platform.</p>
               </div>
@@ -600,17 +354,17 @@ export default function ClientHome() {
         <div className="container">
           <div className="footer__grid">
             <div className="footer__brand">
-              <div className="nav__logo">Sound Thesis</div>
-              <p>Institutional-grade wealth management powered by accessible research, fiduciary transparency, and
-                behavioral coaching.</p>
+              <div className="nav__logo">SoundThesis</div>
+              <p>Democratized financial research and accessible wealth management. No minimum investment barriers.</p>
             </div>
             <div className="footer__links">
-              <h4>Research</h4>
-              <a href="/thesis-notes">Thesis Notes</a>            </div>
+              <a href="/thesis-notes">Thesis Notes</a>
+              <a href="/methodology">Methodology</a>
+            </div>
             <div className="footer__links">
               <h4>Services</h4>
               <a href="/services">Wealth Management</a>
-              <a href="/why-us">Why We Exist</a>
+              <a href="/about-us">Why we exist</a>
             </div>
             <div className="footer__links">
               <h4>Connect</h4>
@@ -618,9 +372,14 @@ export default function ClientHome() {
               <a href="/schedule">Schedule Consultation</a>
             </div>
           </div>
+          <div className="footer__disclosure" style={{ "marginTop": "var(--space-xl)", "paddingTop": "var(--space-lg)", "borderTop": "1px solid rgba(255,255,255,0.1)", "fontSize": "0.85rem", "color": "rgba(255,255,255,0.5)", "textAlign": "left" }}>
+            <h5 style={{ "color": "rgba(255,255,255,0.8)", "marginBottom": "var(--space-xs)", "fontSize": "0.9rem" }}>REGULATORY DISCLOSURE</h5>
+            <p className="mb-xs">SoundThesis operates as an AMFI-registered Mutual Fund Distributor.</p>
+            <p>Investment suggestions are limited to mutual fund schemes and are based on investor goals, risk profile, and suitability information shared by the investor.</p>
+          </div>
           <div className="footer__bottom">
-            <p>&copy; 2024 Sound Thesis. All rights reserved.</p>
-            <p>Fiduciary Alignment. Research-Driven. Behavioral Focus. Standardized Processes.</p>
+            <p>&copy; 2024 SoundThesis. All rights reserved.</p>
+            <p>Democratized Research. Transparent Wealth Management.</p>
           </div>
         </div>
       </footer>

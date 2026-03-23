@@ -76,7 +76,7 @@ export default function ThesisNotes() {
             {/*  Navigation  */}
             <nav className="nav" role="navigation" aria-label="Main navigation">
                 <div className="nav__inner">
-                    <a href="/" className="nav__logo">Sound Thesis</a>
+                    <a href="/" className="nav__logo">SoundThesis</a>
                     <button className="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
                         <span></span>
                         <span></span>
@@ -84,7 +84,7 @@ export default function ThesisNotes() {
                     </button>
                     <ul className="nav__links">                        <li><a href="/thesis-notes" className="nav__link nav__link--active">Thesis Notes</a></li>
                         <li><a href="/services" className="nav__link">Services</a></li>
-                        <li><a href="/why-us" className="nav__link">Why We Exist</a></li>
+                        <li><a href="/about-us" className="nav__link">About us</a></li>
                         <li><a href="/calculators" className="nav__link">Calculators</a></li>
                         <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Schedule Consultation</a></li>
                     </ul>
@@ -95,11 +95,10 @@ export default function ThesisNotes() {
             <section className="hero" style={{ "minHeight": "55vh" }}>
                 <div className="hero__content">
                     <h1 className="hero__title">Thesis Notes</h1>
-                    <p className="hero__tagline">Accessible financial research. Download. Review. Apply.</p>
+                    <p className="hero__tagline">Institutional research available to every serious investor. No signup required. No barriers.</p>
                     <div className="hero__divider"></div>
                     <p className="hero__description">
-                        Our complete research library - models, methodologies, and market analysis - published openly for
-                        verification and application.
+                        High-quality, professional guidance should not depend on portfolio size. We believe in democratizing financial research and accessible wealth management.
                     </p>
                 </div>
             </section>
@@ -197,35 +196,35 @@ export default function ThesisNotes() {
 
                     <div className="grid grid--2">
                         <div className="card">
-                            <h3 className="card__title">Guiding Memos</h3>
-                            <p className="text-small text-muted mb-md">Curated letters and memos from legendary investors that shape our core philosophy and market approach.</p>
+                            <h3 className="card__title">Books Roadmap</h3>
+                            <p className="text-small text-muted mb-md">A curated journey from investing foundations to advanced syntheses.</p>
                             <ul className="feature-list">
                                 <li className="feature-list__item">
-                                    <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-                                    <a href="/memos" className="text-link">Berkshire Hathaway Letters to Shareholders</a>
+                                    <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                                    <span><strong>Stage 1:</strong> The Foundation</span>
                                 </li>
                                 <li className="feature-list__item">
-                                    <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-                                    <a href="/memos" className="text-link">Oaktree Capital Memos - Howard Marks</a>
+                                    <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                                    <span><strong>Stage 5:</strong> Advanced Philosophy & Risk</span>
                                 </li>
                             </ul>
-                            <a href="/memos" className="btn btn--secondary btn--small" style={{ marginTop: '15px' }}>Explore Collection</a>
+                            <a href="/books" className="btn btn--secondary btn--small" style={{ marginTop: '15px' }}>Explore Journey</a>
                         </div>
 
                         <div className="card">
-                            <h3 className="card__title">Books We Recommend</h3>
-                            <p className="text-small text-muted mb-md">Foundational texts that build an unshakeable investing mindset.</p>
+                            <h3 className="card__title">Memos Roadmap</h3>
+                            <p className="text-small text-muted mb-md">Insights from the world's most successful investment minds, organized by depth.</p>
                             <ul className="feature-list">
                                 <li className="feature-list__item">
-                                    <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
-                                    <span><strong>Thinking, Fast and Slow</strong> - Daniel Kahneman</span>
+                                    <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                                    <span><strong>Foundational:</strong> Buffett & Bezos</span>
                                 </li>
                                 <li className="feature-list__item">
-                                    <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
-                                    <span><strong>The Most Important Thing</strong> - Howard Marks</span>
+                                    <svg className="feature-list__check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                                    <span><strong>Advanced:</strong> Howard Marks</span>
                                 </li>
                             </ul>
-                            <a href="/books" className="btn btn--secondary btn--small" style={{ marginTop: '15px' }}>View Book List</a>
+                            <a href="/memos" className="btn btn--secondary btn--small" style={{ marginTop: '15px' }}>View Collections</a>
                         </div>
                     </div>
                 </div>
@@ -236,16 +235,18 @@ export default function ThesisNotes() {
                 <div className="container">
                     <div className="footer__grid">
                         <div className="footer__brand">
-                            <div className="nav__logo">Sound Thesis</div>
-                            <p>Institutional-grade wealth management powered by accessible research, fiduciary transparency, and behavioral coaching.</p>
+                            <div className="nav__logo">SoundThesis</div>
+                            <p>Democratized financial research and accessible wealth management. No minimum investment barriers.</p>
                         </div>
                         <div className="footer__links">
-                            <h4>Research</h4>
-                            <a href="/thesis-notes">Thesis Notes</a>                        </div>
+                            <h4>RESEARCH</h4>
+                            <a href="/thesis-notes">Thesis Notes</a>
+                            <a href="/methodology">Methodology</a>
+                        </div>
                         <div className="footer__links">
                             <h4>Services</h4>
                             <a href="/services">Wealth Management</a>
-                            <a href="/why-us">Why We Exist</a>
+                            <a href="/about-us">About us</a>
                         </div>
                         <div className="footer__links">
                             <h4>Connect</h4>
@@ -254,8 +255,8 @@ export default function ThesisNotes() {
                         </div>
                     </div>
                     <div className="footer__bottom">
-                        <p>&copy; 2024 Sound Thesis. All rights reserved.</p>
-                        <p>Fiduciary Alignment. Research-Driven. Behavioral Focus. Standardized Processes.</p>
+                        <p>&copy; 2024 SoundThesis. All rights reserved.</p>
+                        <p>Democratized Research. Transparent Wealth Management.</p>
                     </div>
                 </div>
             </footer>

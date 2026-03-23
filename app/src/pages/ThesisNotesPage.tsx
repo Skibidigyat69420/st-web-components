@@ -103,8 +103,7 @@ const ThesisNotesPage = () => {
               Thesis Notes
             </h1>
             <p className="scroll-reveal opacity-0 translate-y-5 transition-all duration-600 delay-200 text-medium-gray">
-              Institutional-grade research on Indian markets, freely accessible
-              to all investors.
+              Institutional research available to every serious investor. No signup required. No barriers.
             </p>
           </div>
 

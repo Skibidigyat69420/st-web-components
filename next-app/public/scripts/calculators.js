@@ -190,32 +190,7 @@ const calculateLumpsum = () => {
     });
 };
 
-const calculateEMI = () => {
-    const p = parseFloat(document.getElementById('emi-amount')?.value);
-    const rate = parseFloat(document.getElementById('emi-rate')?.value);
-    const t = parseFloat(document.getElementById('emi-time')?.value);
-    const canvas = document.getElementById('emiChart');
-    if (!p || !rate || !t || !canvas) return;
 
-    const r = (rate / 100) / 12;
-    const n = t * 12;
-    const emi = p * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
-    const totalPayment = emi * n;
-    const totalInterest = totalPayment - p;
-
-    document.getElementById('emi-monthly').innerText = formatCurrency(emi);
-    document.getElementById('emi-principal').innerText = formatCurrency(p);
-    document.getElementById('emi-interest').innerText = formatCurrency(totalInterest);
-    document.getElementById('emi-total-payment').innerText = formatCurrency(totalPayment);
-
-    if (typeof Chart === 'undefined') return;
-    if (charts.emi) charts.emi.destroy();
-    charts.emi = new Chart(canvas, {
-        type: 'doughnut',
-        data: { labels: ['Principal', 'Interest'], datasets: [{ data: [p, totalInterest], backgroundColor: [PRIMARY_COLOR, '#e57373'], borderWidth: 0 }] },
-        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right' } }, cutout: '70%' }
-    });
-};
 
 const calculateSWP = () => {
     const p = parseFloat(document.getElementById('swp-corpus')?.value);
@@ -277,26 +252,7 @@ const calculateCAGR = () => {
     });
 };
 
-const calculateRetirement = () => {
-    const currentAge = parseFloat(document.getElementById('ret-age')?.value);
-    const retAge = parseFloat(document.getElementById('ret-retage')?.value);
-    const expense = parseFloat(document.getElementById('ret-expense')?.value);
-    const inflation = parseFloat(document.getElementById('ret-inflation')?.value);
-    const retRate = parseFloat(document.getElementById('ret-rate-pre')?.value);
-    if (!currentAge || !retAge || !expense || isNaN(inflation) || !retRate) return;
 
-    const yearsToRetire = retAge - currentAge;
-    if (yearsToRetire <= 0) return;
-    const futureExpenseM = expense * Math.pow((1 + inflation / 100), yearsToRetire);
-    const targetCorpus = futureExpenseM * 12 * 25;
-    const i = (retRate / 100) / 12, n = yearsToRetire * 12;
-    const reqSip = (targetCorpus * i) / ((Math.pow(1 + i, n) - 1) * (1 + i));
-
-    document.getElementById('ret-years').innerText = yearsToRetire;
-    document.getElementById('ret-future-expense').innerText = formatCurrency(futureExpenseM);
-    document.getElementById('ret-corpus').innerText = formatCurrency(targetCorpus);
-    document.getElementById('ret-required-sip').innerText = formatCurrency(reqSip);
-};
 
 const calculateCOD = () => {
     const p = parseFloat(document.getElementById('cod-sip')?.value);
@@ -324,47 +280,14 @@ const calculateCOD = () => {
     });
 };
 
-const calculateAlpha = () => {
-    const p = parseFloat(document.getElementById('ba-lumpsum')?.value);
-    const marketRate = parseFloat(document.getElementById('ba-market-rate')?.value);
-    const penalty = parseFloat(document.getElementById('ba-penalty')?.value);
-    const t = parseFloat(document.getElementById('ba-time')?.value);
-    const canvas = document.getElementById('alphaChart');
-    if (!p || !marketRate || isNaN(penalty) || !t || !canvas) return;
-
-    const rD = marketRate / 100, rE = (marketRate - penalty) / 100;
-    const vD = p * Math.pow((1 + rD), t), vE = p * Math.pow((1 + rE), t);
-
-    document.getElementById('ba-disciplined').innerText = formatCurrency(vD);
-    document.getElementById('ba-emotional').innerText = formatCurrency(vE);
-    document.getElementById('ba-lost').innerText = formatCurrency(vD - vE);
-
-    if (typeof Chart === 'undefined') return;
-    const labels = [], dData = [], eData = [];
-    for (let yr = 1; yr <= t; yr++) {
-        labels.push(`Year ${yr}`);
-        dData.push(p * Math.pow((1 + rD), yr));
-        eData.push(p * Math.pow((1 + rE), yr));
-    }
-    if (charts.alpha) charts.alpha.destroy();
-    charts.alpha = new Chart(canvas, {
-        type: 'line',
-        data: { labels, datasets: [{ label: 'Disciplined', data: dData, borderColor: PRIMARY_COLOR, tension: 0.4 }, { label: 'Emotional', data: eData, borderColor: DANGER_COLOR, tension: 0.4 }] },
-        options: getSharedOptions()
-    });
-};
-
 const triggerCalculation = (sectionId) => {
     switch (sectionId) {
         case 'calc-sip': calculateSIP(); break;
         case 'calc-stepup': calculateStepUp(); break;
         case 'calc-lumpsum': calculateLumpsum(); break;
-        case 'calc-emi': calculateEMI(); break;
         case 'calc-swp': calculateSWP(); break;
         case 'calc-cagr': calculateCAGR(); break;
-        case 'calc-retirement': calculateRetirement(); break;
         case 'calc-cod': calculateCOD(); break;
-        case 'calc-alpha': calculateAlpha(); break;
     }
 };
 
@@ -415,13 +338,9 @@ const runInitialCalcs = () => {
     triggerCalculation('calc-sip');
     triggerCalculation('calc-stepup');
     triggerCalculation('calc-lumpsum');
-    triggerCalculation('calc-emi');
     triggerCalculation('calc-swp');
     triggerCalculation('calc-cagr');
-    triggerCalculation('calculateRetirement'); // Fixed targetId typo check
-    triggerCalculation('calc-retirement');
     triggerCalculation('calc-cod');
-    triggerCalculation('calc-alpha');
 };
 
 window.runInitialCalcs = runInitialCalcs;

@@ -65,8 +65,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
-              Democratizing institutional-grade financial research for every serious investor in India. 
-              Research-first, transparent, accessible.
+              Democratized financial research and accessible wealth management. No minimum investment barriers.
             </p>
             <div className="flex items-center gap-4">
               <a

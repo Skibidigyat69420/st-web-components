@@ -5,654 +5,398 @@ import { motion } from 'framer-motion';
 export default function ClientServices() {
     return (
         <>
-
             {/*  Navigation  */}
             <nav className="nav" role="navigation" aria-label="Main navigation">
                 <div className="nav__inner">
-                    <a href="/" className="nav__logo">Sound Thesis</a>
+                    <a href="/" className="nav__logo">SoundThesis</a>
                     <button className="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
-                    <ul className="nav__links">                        <li><a href="/thesis-notes" className="nav__link">Thesis Notes</a></li>
+                    <ul className="nav__links">
+                        <li><a href="/thesis-notes" className="nav__link">Thesis Notes</a></li>
                         <li><a href="/services" className="nav__link nav__link--active">Services</a></li>
-                        <li><a href="/why-us" className="nav__link">Why We Exist</a></li>
+                        <li><a href="/about-us" className="nav__link">Why we exist</a></li>
                         <li><a href="/calculators" className="nav__link">Calculators</a></li>
-                        <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Schedule Consultation</a>
-                        </li>
+                        <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Schedule Consultation</a></li>
                     </ul>
                 </div>
             </nav>
 
             {/*  Hero Section  */}
-            <section className="hero" style={{ "minHeight": "60vh" }}>
-                <motion.div 
-                    className="hero__content"
-                    initial={{ opacity: 0, scale: 0.95, y: 30 }}
-                    animate={{ opacity: 1, scale: 1, y: 0 }}
-                    transition={{ type: "spring", stiffness: 80, damping: 20, delay: 0.1 }}
-                >
+            <section className="hero" style={{ minHeight: '70vh' }}>
+                <div className="hero__content">
                     <motion.h1 
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
                         className="hero__title"
-                        initial={{ opacity: 0, y: 40, rotateX: 15 }}
-                        animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                        transition={{ type: "spring", stiffness: 100, damping: 15, delay: 0.3 }}
+                        style={{ fontFamily: 'var(--font-serif)', fontSize: '3.5rem', lineHeight: '1.1', color: 'white', fontWeight: '700' }}
                     >
-                        Wealth Management,<br />Built on Four Core Pillars.
+                        Sound Investing Requires More Than Instinct.
                     </motion.h1>
-                    <motion.div 
-                        className="hero__divider"
-                        initial={{ scaleX: 0 }}
-                        animate={{ scaleX: 1 }}
-                        transition={{ duration: 0.8, delay: 0.5 }}
-                    ></motion.div>
-                    <motion.p 
-                        className="hero__description"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.8, delay: 0.6 }}
-                    >
-                        Fiduciary transparency, accessible research, behavioral coaching, and systematized execution.
-                        Apply institutional-grade analysis to your wealth.
-                    </motion.p>
-                </motion.div>
-            </section>
-
-            {/*  No Minimums Statement  */}
-            <section className="section section--white">
-                <div className="container text-center" style={{ "maxWidth": "800px" }}>
-                    <motion.div
+                    <motion.p
                         initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <h2 className="mb-md">No Minimum Investment Required</h2>
-                        <div className="section-header__divider" style={{ "margin": "0 auto var(--space-md)" }}></div>
-                        <p style={{ "fontSize": "18px", "lineHeight": "1.8" }}>
-                            We believe sophisticated strategies shouldn't have a ticket price. Traditional wealth managers
-                            require $1M, $5M, or more to access their services. We rejected that model entirely.
-                        </p>
-                        <p className="text-muted" style={{ "marginTop": "var(--space-md)" }}>
-                            Our service tiers are based on the level of support you need - not the size of your portfolio.
-                        </p>
-                    </motion.div>
-                </div>
-            </section>
-
-            {/*  Service Tiers  */}
-            <section className="section">
-                <div className="container">
-                    <motion.div 
-                        className="section-header"
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <h2 className="section-header__title">Ways to Engage</h2>
-                        <p className="text-muted">Choose how you want to apply our research.</p>
-                    </motion.div>
-                    <motion.div 
-                        className="bento-grid"
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.1 }}
+                        className="hero__description"
+                        style={{ fontSize: '1.25rem', color: 'rgba(255,255,255,0.9)', lineHeight: '1.6' }}
                     >
-                        {/*  Wealth Implementation  */}
-                        <motion.div 
-                            className="bento-item bento-col-12 hover-lift"
-                            style={{ "background": "linear-gradient(145deg, var(--color-navy) 0%, var(--color-navy-dark) 100%)", "color": "white", "border": "none" }}
-                            whileHover={{ y: -5 }}
-                        >
-                            <div style={{ "display": "flex", "flexDirection": "column", "height": "100%", "position": "relative", "zIndex": "2" }}>
-                                <h3 className="card__title" style={{ "color": "white", "fontSize": "32px" }}>Wealth Implementation</h3>
-                                <p className="text-small mb-md"
-                                    style={{ "color": "var(--color-gold)", "fontWeight": "600", "textTransform": "uppercase", "letterSpacing": "1px" }}>
-                                    Distribution Based Wealth Management</p>
-                                <p className="card__description"
-                                    style={{ "color": "rgba(255,255,255,0.8)", "fontSize": "18px", "maxWidth": "90%" }}>
-                                    We implement your portfolio into <strong>Mutual Funds, AIFs, PMS, and SIFs</strong>.
-                                    Services include tax-optimized portfolios and full rebalancing.
-                                </p>
-                                <div
-                                    style={{ "display": "grid", "gridTemplateColumns": "1fr 1fr", "gap": "var(--space-md)", "marginBottom": "var(--space-xl)", "marginTop": "auto" }}>
-                                    <div
-                                        style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px", "background": "rgba(255,255,255,0.05)", "padding": "16px", "borderRadius": "12px" }}>
-                                        <svg style={{ "color": "var(--color-gold)", "width": "24px", "height": "24px", "flexShrink": "0" }}
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke="currentColor" strokeWidth="2">
-                                            <path strokeLinecap="round" strokeLinejoin="round"
-                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <span style={{ "fontWeight": "500" }}>Fiduciary-aligned implementation (No hidden
-                                            costs)</span>
-                                    </div>
-                                    <div
-                                        style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px", "background": "rgba(255,255,255,0.05)", "padding": "16px", "borderRadius": "12px" }}>
-                                        <svg style={{ "color": "var(--color-gold)", "width": "24px", "height": "24px", "flexShrink": "0" }}
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke="currentColor" strokeWidth="2">
-                                            <path strokeLinecap="round" strokeLinejoin="round"
-                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <span style={{ "fontWeight": "500" }}>Research-driven portfolio construction</span>
-                                    </div>
-                                    <div
-                                        style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px", "background": "rgba(255,255,255,0.05)", "padding": "16px", "borderRadius": "12px" }}>
-                                        <svg style={{ "color": "var(--color-gold)", "width": "24px", "height": "24px", "flexShrink": "0" }}
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke="currentColor" strokeWidth="2">
-                                            <path strokeLinecap="round" strokeLinejoin="round"
-                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <span style={{ "fontWeight": "500" }}>Dedicated behavioral coaching & guidance</span>
-                                    </div>
-                                    <div
-                                        style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px", "background": "rgba(255,255,255,0.05)", "padding": "16px", "borderRadius": "12px" }}>
-                                        <svg style={{ "color": "var(--color-gold)", "width": "24px", "height": "24px", "flexShrink": "0" }}
-                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke="currentColor" strokeWidth="2">
-                                            <path strokeLinecap="round" strokeLinejoin="round"
-                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <span style={{ "fontWeight": "500" }}>Systematized execution & standardized monitoring</span>
-                                    </div>
-                                </div>
-                                <div
-                                    style={{ "paddingTop": "var(--space-md)", "borderTop": "1px dashed rgba(255,255,255,0.2)", "display": "flex", "alignItems": "center", "justifyContent": "flex-end" }}>
-                                    <motion.a 
-                                        whileHover={{ scale: 1.05 }} 
-                                        whileTap={{ scale: 0.95 }} 
-                                        href="/schedule" 
-                                        className="btn btn--white"
-                                        style={{ "borderRadius": "var(--radius-pill)" }}>Schedule Consultation</motion.a>
-                                </div>
-                            </div>
-                        </motion.div>
-                    </motion.div>
-                </div>
-            </section>
-
-
-            {/*  How We Select Clients  */}
-            <section className="section section--secondary">
-                <div className="container text-center" style={{ "maxWidth": "800px" }}>
+                        We support you across your entire investment journey — from understanding your goals to selecting suitable investments and guiding you as your portfolio evolves over time.
+                    </motion.p>
+                    
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.6 }}
+                        initial={{ opacity: 0, x: -30 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        style={{ background: 'rgba(255,255,255,0.05)', borderLeft: '4px solid var(--color-gold)', padding: 'var(--space-md) var(--space-lg)', borderRadius: '0 12px 12px 0', marginBottom: 'var(--space-xl)', maxWidth: '800px', margin: '0 auto var(--space-xl)', backdropFilter: 'blur(10px)', textAlign: 'left' }}
                     >
-                        <h2 className="mb-md">How We Select Clients</h2>
-                        <div className="section-header__divider" style={{ "margin": "0 auto var(--space-md)" }}></div>
-                        <p style={{ "fontSize": "18px", "lineHeight": "1.8" }}>
-                            We are deliberate about who we work with. Implementation shouldn't be focused entirely on minimums, but
-                            on alignment. We seek investors who value our fiduciary commitment, understand our research-driven
-                            methodology,
-                            desire behavioral discipline, and appreciate the reliability of standardized processes.
+                        <p style={{ margin: 0, fontSize: '1.1rem', color: 'white', lineHeight: '1.6' }}>
+                            <strong>Our focus is simple:</strong> <span style={{ color: 'rgba(255,255,255,0.8)' }}>help you avoid costly mistakes, stay disciplined, and build long-term wealth with clarity and confidence.</span>
                         </p>
                     </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.3 }}
+                    >
+                        <a href="/schedule" className="btn btn--white" style={{ padding: '16px 32px', fontSize: '1.1rem', background: 'var(--color-white)', color: 'var(--color-navy)' }}>Start a Conversation</a>
+                    </motion.div>
                 </div>
             </section>
 
-            {/*  Products Offered  */}
-            <section className="section section--navy"
-                style={{ "background": "linear-gradient(145deg, var(--color-navy) 0%, var(--color-navy-dark) 100%)", "color": "white" }}>
+            {/*  Investment Options We Support  */}
+            <section className="section bg-white" style={{ paddingTop: 'var(--space-2xl)' }}>
                 <div className="container">
                     <motion.div 
                         className="section-header text-center"
                         initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2 className="section-header__title" style={{ "color": "white", "marginBottom": "var(--space-md)" }}>Products Offered
-                        </h2>
-                        <div className="section-header__divider"
-                            style={{ "margin": "0 auto var(--space-md)", "background": "var(--color-gold)" }}></div>
-                        <p style={{ "color": "rgba(255,255,255,0.8)" }}>A comprehensive suite of investment vehicles tailored to your
-                            wealth strategy.</p>
+                        <h1 style={{ fontSize: '3rem', fontFamily: 'var(--font-serif)', marginBottom: 'var(--space-md)' }}>Investment Options We Support</h1>
+                        <p className="text-muted" style={{ fontSize: '1.1rem', maxWidth: '700px', margin: '0 auto' }}>
+                            Different investors need different solutions. We help you choose what fits your goals, risk comfort, and scale.
+                        </p>
                     </motion.div>
 
                     <motion.div 
-                        className="grid grid--2"
+                        className="grid grid--2 mt-xl"
                         initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, margin: "-100px" }}
+                        animate="visible"
                         variants={{
                             hidden: { opacity: 0 },
                             visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
                         }}
+                        style={{ gap: 'var(--space-md)' }}
                     >
-                        {/*  Mutual Funds  */}
+                        {/* Mutual Funds */}
                         <motion.div 
-                            className="card"
-                            variants={{ hidden: { opacity: 0, scale: 0.95, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 100, damping: 15 } } }}
-                            whileHover={{ y: -5 }}
-                            style={{ "background": "rgba(255,255,255,0.03)", "border": "1px solid rgba(212, 168, 77, 0.2)", "borderRadius": "16px", "padding": "var(--space-lg)", "transition": "none" }}>
-                            <div style={{ "display": "flex", "alignItems": "center", "gap": "16px", "marginBottom": "var(--space-md)" }}>
-                                <div
-                                    style={{ "width": "48px", "height": "48px", "borderRadius": "12px", "background": "rgba(212, 168, 77, 0.1)", "display": "flex", "alignItems": "center", "justifyContent": "center", "color": "var(--color-gold)" }}>
-                                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                        strokeWidth="2">
-                                        <path strokeLinecap="round" strokeLinejoin="round"
-                                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <h3 style={{ "color": "var(--color-white)", "margin": "0", "fontSize": "24px" }}>Mutual Funds</h3>
+                            className="card card--hover text-left"
+                            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } } }}
+                            style={{ padding: 'var(--space-lg)', display: 'flex', flexDirection: 'column', height: '100%', background: 'var(--color-surface)', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '16px' }}
+                        >
+                            <div style={{ padding: '12px', background: 'rgba(15, 118, 110, 0.1)', borderRadius: '12px', width: 'fit-content', color: '#0F766E', marginBottom: 'var(--space-md)' }}>
+                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                                </svg>
                             </div>
-                            <p style={{ "color": "rgba(255,255,255,0.7)", "fontSize": "16px", "marginBottom": "0" }}>Regulated pooled
-                                investment vehicles offering diversified exposure across asset classes with high liquidity and
-                                transparency.</p>
+                            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: 'var(--space-sm)' }}>Mutual Funds</h3>
+                            <p className="text-muted mb-lg" style={{ fontSize: '0.95rem', flexGrow: 1 }}>Simple, diversified, and flexible. Best for most investors starting or building long-term wealth.</p>
+                            <div style={{ color: 'var(--color-navy)', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase' }}>IDEAL FOR MOST</div>
                         </motion.div>
 
-                        {/*  PMS  */}
+                        {/* PMS */}
                         <motion.div 
-                            className="card"
-                            variants={{ hidden: { opacity: 0, scale: 0.95, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 100, damping: 15 } } }}
-                            whileHover={{ y: -5 }}
-                            style={{ "background": "rgba(255,255,255,0.03)", "border": "1px solid rgba(212, 168, 77, 0.2)", "borderRadius": "16px", "padding": "var(--space-lg)", "transition": "none" }}>
-                            <div style={{ "display": "flex", "alignItems": "center", "gap": "16px", "marginBottom": "var(--space-md)" }}>
-                                <div
-                                    style={{ "width": "48px", "height": "48px", "borderRadius": "12px", "background": "rgba(212, 168, 77, 0.1)", "display": "flex", "alignItems": "center", "justifyContent": "center", "color": "var(--color-gold)" }}>
-                                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                        strokeWidth="2">
-                                        <path strokeLinecap="round" strokeLinejoin="round"
-                                            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                    </svg>
-                                </div>
-                                <h3 style={{ "color": "var(--color-white)", "margin": "0", "fontSize": "24px" }}>PMS</h3>
+                            className="card card--hover text-left"
+                            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } } }}
+                            style={{ padding: 'var(--space-lg)', display: 'flex', flexDirection: 'column', height: '100%', background: 'var(--color-surface)', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '16px' }}
+                        >
+                            <div style={{ padding: '12px', background: 'rgba(30, 58, 138, 0.1)', borderRadius: '12px', width: 'fit-content', color: 'var(--color-navy)', marginBottom: 'var(--space-md)' }}>
+                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                                </svg>
                             </div>
-                            <p style={{ "color": "rgba(255,255,255,0.7)", "fontSize": "16px", "marginBottom": "0" }}>Portfolio Management
-                                Services offering customized portfolios managed by professionals for targeted and sophisticated
-                                strategies.</p>
+                            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: 'var(--space-sm)' }}>PMS</h3>
+                            <p className="text-muted mb-lg" style={{ fontSize: '0.95rem', flexGrow: 1 }}>Professionally managed with concentrated strategies and customization.</p>
+                            <div style={{ color: 'var(--color-navy)', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase' }}>SCALE: ₹50L+</div>
                         </motion.div>
 
-                        {/*  AIF  */}
+                        {/* AIF */}
                         <motion.div 
-                            className="card"
-                            variants={{ hidden: { opacity: 0, scale: 0.95, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 100, damping: 15 } } }}
-                            whileHover={{ y: -5 }}
-                            style={{ "background": "rgba(255,255,255,0.03)", "border": "1px solid rgba(212, 168, 77, 0.2)", "borderRadius": "16px", "padding": "var(--space-lg)", "transition": "none" }}>
-                            <div style={{ "display": "flex", "alignItems": "center", "gap": "16px", "marginBottom": "var(--space-md)" }}>
-                                <div
-                                    style={{ "width": "48px", "height": "48px", "borderRadius": "12px", "background": "rgba(212, 168, 77, 0.1)", "display": "flex", "alignItems": "center", "justifyContent": "center", "color": "var(--color-gold)" }}>
-                                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                        strokeWidth="2">
-                                        <path strokeLinecap="round" strokeLinejoin="round"
-                                            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                                    </svg>
-                                </div>
-                                <h3 style={{ "color": "var(--color-white)", "margin": "0", "fontSize": "24px" }}>AIF</h3>
+                            className="card card--hover text-left"
+                            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } } }}
+                            style={{ padding: 'var(--space-lg)', display: 'flex', flexDirection: 'column', height: '100%', background: 'var(--color-surface)', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '16px' }}
+                        >
+                            <div style={{ padding: '12px', background: 'rgba(15, 118, 110, 0.1)', borderRadius: '12px', width: 'fit-content', color: '#0F766E', marginBottom: 'var(--space-md)' }}>
+                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                </svg>
                             </div>
-                            <p style={{ "color": "rgba(255,255,255,0.7)", "fontSize": "16px", "marginBottom": "0" }}>Alternative Investment
-                                Funds providing sophisticated access to non-traditional assets like private equity, venture
-                                capital, and structured products.</p>
+                            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: 'var(--space-sm)' }}>AIF</h3>
+                            <p className="text-muted mb-lg" style={{ fontSize: '0.95rem', flexGrow: 1 }}>Access to private markets, venture capital, and non-traditional opportunities.</p>
+                            <div style={{ color: '#0F766E', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase' }}>EXPERIENCED INVESTORS</div>
                         </motion.div>
 
-                        {/*  SIF  */}
+                        {/* SIF */}
                         <motion.div 
-                            className="card"
-                            variants={{ hidden: { opacity: 0, scale: 0.95, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 100, damping: 15 } } }}
-                            whileHover={{ y: -5 }}
-                            style={{ "background": "rgba(255,255,255,0.03)", "border": "1px solid rgba(212, 168, 77, 0.2)", "borderRadius": "16px", "padding": "var(--space-lg)", "transition": "none" }}>
-                            <div style={{ "display": "flex", "alignItems": "center", "gap": "16px", "marginBottom": "var(--space-md)" }}>
-                                <div
-                                    style={{ "width": "48px", "height": "48px", "borderRadius": "12px", "background": "rgba(212, 168, 77, 0.1)", "display": "flex", "alignItems": "center", "justifyContent": "center", "color": "var(--color-gold)" }}>
-                                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                        strokeWidth="2">
-                                        <path strokeLinecap="round" strokeLinejoin="round"
-                                            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                </div>
-                                <h3 style={{ "color": "var(--color-white)", "margin": "0", "fontSize": "24px" }}>SIF</h3>
+                            className="card card--hover text-left"
+                            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } } }}
+                            style={{ padding: 'var(--space-lg)', display: 'flex', flexDirection: 'column', height: '100%', background: 'var(--color-surface)', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '16px' }}
+                        >
+                            <div style={{ padding: '12px', background: 'rgba(212, 168, 77, 0.1)', borderRadius: '12px', width: 'fit-content', color: 'var(--color-gold)', marginBottom: 'var(--space-md)' }}>
+                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
                             </div>
-                            <p style={{ "color": "rgba(255,255,255,0.7)", "fontSize": "16px", "marginBottom": "0" }}>Specialized Investment
-                                Funds structured to capture niche market opportunities, thematic strategies, or specific
-                                geographical exposures.</p>
+                            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: 'var(--space-sm)' }}>SIF</h3>
+                            <p className="text-muted mb-lg" style={{ fontSize: '0.95rem', flexGrow: 1 }}>A new hybrid category bridging mutual funds and PMS. Offers flexibility for sophisticated investors using strategies like long-short equity, with a ₹10 lakh minimum.</p>
+                            <div style={{ color: 'var(--color-gold)', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase' }}>TARGETED EXPOSURE</div>
                         </motion.div>
                     </motion.div>
                 </div>
             </section>
 
-            {/*  Overview & Scope  */}
-            <section className="section">
-                <div className="container">
-                    <motion.div 
-                        className="section-header"
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <h2 className="section-header__title">Our Approach & Process</h2>
-                        <div className="section-header__divider"></div>
-                        <p className="text-muted">An overview of our role and working structure.</p>
-                    </motion.div>
-
-                    <motion.div 
-                        className="bento-grid"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, margin: "-100px" }}
-                        variants={{
-                            hidden: { opacity: 0 },
-                            visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
-                        }}
-                    >
-                        {/*  What We Do / How We Work  */}
+            {/*  Why This Matters for You  */}
+            <section className="section bg-navy" style={{ background: 'linear-gradient(145deg, var(--color-navy) 0%, var(--color-navy-dark) 100%)', color: 'white' }}>
+                <div className="container" style={{ maxWidth: '1200px' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'var(--space-2xl)', alignItems: 'center' }}>
                         <motion.div 
-                            className="bento-item bento-col-4 hover-lift"
-                            variants={{ hidden: { opacity: 0, scale: 0.95, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 100, damping: 15 } } }}
-                            style={{ "display": "flex", "flexDirection": "column", "justifyContent": "space-between" }}
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            style={{ paddingRight: 'var(--space-lg)' }}
                         >
-                            <div>
-                                <h3 className="mb-sm">What We Do</h3>
-                                <p className="text-muted mb-md">Facilitating distribution of various financial products and related
-                                    transactions.</p>
-
-                                <h3 className="mb-sm" style={{ "marginTop": "var(--space-md)" }}>How We Work</h3>
-                                <p className="text-muted mb-md">A structured, process-driven approach to investing.</p>
-
-                                <h3 className="mb-sm" style={{ "marginTop": "var(--space-md)" }}>Engagement</h3>
-                                <p className="text-muted">Flexible options for client interaction.</p>
-                            </div>
-                        </motion.div>
-
-                        {/*  Scope of Our Role (Comparison)  */}
-                        <motion.div 
-                            className="bento-item bento-col-8 hover-lift" 
-                            style={{ "background": "var(--color-surface)" }}
-                            variants={{ hidden: { opacity: 0, scale: 0.95, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 100, damping: 15 } } }}
-                        >
-                            <h3 className="mb-md">Scope of Our Role</h3>
-                            <div style={{ "display": "grid", "gridTemplateColumns": "1fr 1fr", "gap": "var(--space-md)" }}>
-
-                                {/*  We Support Clients With  */}
-                                <div>
-                                    <h4
-                                        style={{ "color": "var(--color-gold)", "marginBottom": "var(--space-sm)", "paddingBottom": "var(--space-xs)", "borderBottom": "2px solid var(--color-gold)" }}>
-                                        We Support Clients With</h4>
-                                    <ul style={{ "listStyle": "none", "padding": "0" }}>
-                                        <li style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px", "marginBottom": "12px" }}>
-                                            <svg style={{ "color": "var(--color-gold)", "width": "20px", "height": "20px", "flexShrink": "0", "marginTop": "2px" }}
-                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor" strokeWidth="2">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            <span className="text-muted">Understanding financial products</span>
-                                        </li>
-                                        <li style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px", "marginBottom": "12px" }}>
-                                            <svg style={{ "color": "var(--color-gold)", "width": "20px", "height": "20px", "flexShrink": "0", "marginTop": "2px" }}
-                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor" strokeWidth="2">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            <span className="text-muted">Risk profiling</span>
-                                        </li>
-                                        <li style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px", "marginBottom": "12px" }}>
-                                            <svg style={{ "color": "var(--color-gold)", "width": "20px", "height": "20px", "flexShrink": "0", "marginTop": "2px" }}
-                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor" strokeWidth="2">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            <span className="text-muted">Facilitating transactions</span>
-                                        </li>
-                                        <li style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px", "marginBottom": "12px" }}>
-                                            <svg style={{ "color": "var(--color-gold)", "width": "20px", "height": "20px", "flexShrink": "0", "marginTop": "2px" }}
-                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor" strokeWidth="2">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            <span className="text-muted">Portfolio monitoring support</span>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                {/*  We Do Not  */}
-                                <div>
-                                    <h4
-                                        style={{ "color": "#64748b", "marginBottom": "var(--space-sm)", "paddingBottom": "var(--space-xs)", "borderBottom": "2px solid #e2e8f0" }}>
-                                        We Do Not</h4>
-                                    <ul style={{ "listStyle": "none", "padding": "0", "opacity": "0.8" }}>
-                                        <li style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px", "marginBottom": "12px" }}>
-                                            <svg style={{ "color": "#64748b", "width": "20px", "height": "20px", "flexShrink": "0", "marginTop": "2px" }}
-                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor" strokeWidth="2">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                            </svg>
-                                            <span className="text-muted">Manufacture financial products</span>
-                                        </li>
-                                        <li style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px", "marginBottom": "12px" }}>
-                                            <svg style={{ "color": "#64748b", "width": "20px", "height": "20px", "flexShrink": "0", "marginTop": "2px" }}
-                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor" strokeWidth="2">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                            </svg>
-                                            <span className="text-muted">Manage client money directly</span>
-                                        </li>
-                                        <li style={{ "display": "flex", "alignItems": "flex-start", "gap": "12px", "marginBottom": "12px" }}>
-                                            <svg style={{ "color": "#64748b", "width": "20px", "height": "20px", "flexShrink": "0", "marginTop": "2px" }}
-                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke="currentColor" strokeWidth="2">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                                            </svg>
-                                            <span className="text-muted">Take discretionary investment decisions</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div
-                                style={{ "marginTop": "var(--space-md)", "padding": "12px", "background": "rgba(212, 168, 77, 0.05)", "borderRadius": "8px", "borderLeft": "3px solid var(--color-gold)" }}>
-                                <p className="text-small" style={{ "margin": "0" }}><strong>Note:</strong> All investments are made by
-                                    clients in their own accounts.</p>
-                            </div>
-                        </motion.div>
-                    </motion.div>
-                </div>
-            </section>
-
-            {/*  Client Onboarding Process  */}
-            <section className="section section--secondary">
-                <div className="container">
-                    <motion.div 
-                        className="section-header"
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <h2 className="section-header__title">Client Onboarding Process</h2>
-                        <div className="section-header__divider"></div>
-                    </motion.div>
-
-                    <motion.div 
-                        className="process-steps"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, margin: "-100px" }}
-                        variants={{
-                            hidden: { opacity: 0 },
-                            visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
-                        }}
-                    >
-                        <motion.div variants={{ hidden: { opacity: 0, scale: 0.8, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 120, damping: 14 } } }} className="process-step">
-                            <div className="process-step__number">1</div>
-                            <h4 className="process-step__title">Risk Profiling</h4>
-                            <p className="text-small text-muted">Collecting info on financial goals, time horizon, and risk
-                                tolerance.</p>
-                        </motion.div>
-                        <motion.div variants={{ hidden: { opacity: 0, scale: 0.8, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 120, damping: 14 } } }} className="process-step">
-                            <div className="process-step__number">2</div>
-                            <h4 className="process-step__title">IPS Creation</h4>
-                            <p className="text-small text-muted">Drafting a written document to record preferences and constraints.
+                            <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', marginBottom: 'var(--space-md)', color: 'white' }}>Why This Matters for You</h2>
+                            <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', marginBottom: 'var(--space-xl)', lineHeight: '1.6' }}>
+                                Today, many investors struggle to know whether guidance is truly in their interest or if decisions are based on research vs. incentives.
                             </p>
-                        </motion.div>
-                        <motion.div variants={{ hidden: { opacity: 0, scale: 0.8, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 120, damping: 14 } } }} className="process-step">
-                            <div className="process-step__number">3</div>
-                            <h4 className="process-step__title">Construction</h4>
-                            <p className="text-small text-muted">Presenting options and explaining asset allocation.</p>
-                        </motion.div>
-                        <motion.div variants={{ hidden: { opacity: 0, scale: 0.8, y: 30 }, visible: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 120, damping: 14 } } }} className="process-step">
-                            <div className="process-step__number">4</div>
-                            <h4 className="process-step__title">Decision</h4>
-                            <p className="text-small text-muted">Final investment decisions are made by the client.</p>
-                        </motion.div>
-                    </motion.div>
-                </div>
-            </section>
-
-            {/*  Ongoing Portfolio Support  */}
-            <section className="section section--navy"
-                style={{ "background": "linear-gradient(145deg, var(--color-navy) 0%, var(--color-navy-dark) 100%)", "color": "white" }}>
-                <div className="container">
-                    <motion.div 
-                        className="section-header"
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <h2 className="section-header__title" style={{ "fontFamily": "var(--font-serif)", "color": "white" }}>Ongoing Portfolio Support</h2>
-                        <div className="section-header__divider" style={{ "background": "var(--color-gold)", "margin": "0 auto var(--space-md)" }}></div>
-                    </motion.div>
-
-                    {/*  Horizontal Layout for Ongoing Support  */}
-                    <motion.div 
-                        className="hide-scrollbar"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, margin: "-100px" }}
-                        variants={{
-                            hidden: { opacity: 0 },
-                            visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
-                        }}
-                        style={{ "display": "flex", "flexDirection": "row", "gap": "var(--space-lg)", "overflowX": "auto", "padding": "var(--space-md) 0 var(--space-xl) 0", "flexWrap": "nowrap", "WebkitOverflowScrolling": "touch" }}
-                    >
-                        {/*  Periodic Reviews  */}
-                        <motion.div 
-                            className="bento-item hover-lift card--center glass-panel"
-                            variants={{ hidden: { opacity: 0, scale: 0.95, x: 50 }, visible: { opacity: 1, scale: 1, x: 0, transition: { type: "spring", stiffness: 90, damping: 15 } } }}
-                            style={{ "flex": "1", "minWidth": "320px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "flex-start", "padding": "var(--space-2xl) var(--space-xl)", "border": "1px solid rgba(212, 168, 77, 0.2)", "background": "rgba(255, 255, 255, 0.05)", "backdropFilter": "blur(12px)", "boxShadow": "0 8px 32px 0 rgba(0, 0, 0, 0.37)" }}>
-                            <div
-                                style={{ "width": "70px", "height": "70px", "background": "linear-gradient(135deg, rgba(212, 168, 77, 0.2) 0%, rgba(212, 168, 77, 0.05) 100%)", "borderRadius": "20px", "display": "flex", "alignItems": "center", "justifyContent": "center", "marginBottom": "var(--space-lg)", "color": "var(--color-gold)", "boxShadow": "0 4px 15px rgba(212, 168, 77, 0.2)" }}>
-                                <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" strokeWidth="1.5">
-                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <h3 className="mb-md" style={{ "fontFamily": "var(--font-serif)", "color": "var(--color-gold)" }}>Periodic Reviews</h3>
-                            <p style={{ "lineHeight": "1.6", "color": "rgba(255, 255, 255, 0.8)" }}>Portfolios are reviewed periodically to ensure alignment with goals.</p>
-                        </motion.div>
-
-                        {/*  Information Sharing  */}
-                        <motion.div 
-                            className="bento-item hover-lift card--center glass-panel"
-                            variants={{ hidden: { opacity: 0, scale: 0.95, x: 50 }, visible: { opacity: 1, scale: 1, x: 0, transition: { type: "spring", stiffness: 90, damping: 15 } } }}
-                            style={{ "flex": "1", "minWidth": "320px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "flex-start", "padding": "var(--space-2xl) var(--space-xl)", "border": "1px solid rgba(212, 168, 77, 0.2)", "background": "rgba(255, 255, 255, 0.05)", "backdropFilter": "blur(12px)", "boxShadow": "0 8px 32px 0 rgba(0, 0, 0, 0.37)" }}>
-                            <div
-                                style={{ "width": "70px", "height": "70px", "background": "linear-gradient(135deg, rgba(212, 168, 77, 0.2) 0%, rgba(212, 168, 77, 0.05) 100%)", "borderRadius": "20px", "display": "flex", "alignItems": "center", "justifyContent": "center", "marginBottom": "var(--space-lg)", "color": "var(--color-gold)", "boxShadow": "0 4px 15px rgba(212, 168, 77, 0.2)" }}>
-                                <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" strokeWidth="1.5">
-                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <h3 className="mb-md" style={{ "fontFamily": "var(--font-serif)", "color": "var(--color-gold)" }}>Information Sharing</h3>
-                            <ul style={{ "listStyle": "none", "padding": "0", "textAlign": "left", "display": "inline-block", "width": "100%", "color": "rgba(255, 255, 255, 0.8)" }}>
-                                <li style={{ "marginBottom": "10px", "display": "flex", "alignItems": "center", "gap": "8px" }}><span style={{ "color": "var(--color-gold)" }}>•</span> Portfolio composition</li>
-                                <li style={{ "marginBottom": "10px", "display": "flex", "alignItems": "center", "gap": "8px" }}><span style={{ "color": "var(--color-gold)" }}>•</span> Asset allocation</li>
-                                <li style={{ "display": "flex", "alignItems": "center", "gap": "8px" }}><span style={{ "color": "var(--color-gold)" }}>•</span> Material changes in funds</li>
+                            
+                            <ul style={{ listStyle: 'none', padding: 0 }}>
+                                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '16px', marginBottom: 'var(--space-lg)' }}>
+                                    <div style={{ color: 'var(--color-navy)', background: 'white', borderRadius: '50%', padding: '4px', flexShrink: 0, marginTop: '4px' }}>
+                                        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </div>
+                                    <p style={{ margin: 0, color: 'rgba(255,255,255,0.9)', lineHeight: '1.6' }}><strong>Portfolio Structure:</strong> Long-term outcomes are driven by management over time, not just individual picks.</p>
+                                </li>
+                                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
+                                    <div style={{ color: 'var(--color-navy)', background: 'white', borderRadius: '50%', padding: '4px', flexShrink: 0, marginTop: '4px' }}>
+                                        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </div>
+                                    <p style={{ margin: 0, color: 'rgba(255,255,255,0.9)', lineHeight: '1.6' }}><strong>Avoid Emotional Friction:</strong> Reactive decisions are one of the biggest reasons for underperformance.</p>
+                                </li>
                             </ul>
                         </motion.div>
 
-                        {/*  Client Confirmation  */}
-                        <motion.div 
-                            className="bento-item hover-lift card--center glass-panel"
-                            variants={{ hidden: { opacity: 0, scale: 0.95, x: 50 }, visible: { opacity: 1, scale: 1, x: 0, transition: { type: "spring", stiffness: 90, damping: 15 } } }}
-                            style={{ "flex": "1", "minWidth": "320px", "display": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "flex-start", "padding": "var(--space-2xl) var(--space-xl)", "border": "1px solid rgba(212, 168, 77, 0.2)", "background": "rgba(255, 255, 255, 0.05)", "backdropFilter": "blur(12px)", "boxShadow": "0 8px 32px 0 rgba(0, 0, 0, 0.37)" }}>
-                            <div
-                                style={{ "width": "70px", "height": "70px", "background": "linear-gradient(135deg, rgba(212, 168, 77, 0.2) 0%, rgba(212, 168, 77, 0.05) 100%)", "borderRadius": "20px", "display": "flex", "alignItems": "center", "justifyContent": "center", "marginBottom": "var(--space-lg)", "color": "var(--color-gold)", "boxShadow": "0 4px 15px rgba(212, 168, 77, 0.2)" }}>
-                                <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" strokeWidth="1.5">
-                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                        <motion.div
+                            initial={{ opacity: 0, x: 30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            style={{ background: '#e2e8f0', color: 'var(--color-navy)', padding: 'var(--space-2xl)', borderRadius: '24px' }}
+                        >
+                            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '2rem', marginBottom: 'var(--space-xl)' }}>Our Commitment</h3>
+                            
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-xl)' }}>
+                                <div style={{ display: 'flex', gap: '24px' }}>
+                                    <div style={{ color: 'var(--color-gold)', fontWeight: '700', fontSize: '1.25rem', marginTop: '2px' }}>01</div>
+                                    <div>
+                                        <h4 style={{ margin: '0 0 6px 0', fontSize: '1.15rem' }}>Rigorous Research</h4>
+                                        <p style={{ margin: 0, color: 'var(--color-navy)', opacity: 0.7, fontSize: '1.05rem' }}>To evaluate real opportunities and risks.</p>
+                                    </div>
+                                </div>
+                                <div style={{ display: 'flex', gap: '24px' }}>
+                                    <div style={{ color: 'var(--color-gold)', fontWeight: '700', fontSize: '1.25rem', marginTop: '2px' }}>02</div>
+                                    <div>
+                                        <h4 style={{ margin: '0 0 6px 0', fontSize: '1.15rem' }}>Best-in-class Processes</h4>
+                                        <p style={{ margin: 0, color: 'var(--color-navy)', opacity: 0.7, fontSize: '1.05rem' }}>Ensuring consistency and discipline.</p>
+                                    </div>
+                                </div>
+                                <div style={{ display: 'flex', gap: '24px' }}>
+                                    <div style={{ color: 'var(--color-gold)', fontWeight: '700', fontSize: '1.25rem', marginTop: '2px' }}>03</div>
+                                    <div>
+                                        <h4 style={{ margin: '0 0 6px 0', fontSize: '1.15rem' }}>Highly Qualified Professionals</h4>
+                                        <p style={{ margin: 0, color: 'var(--color-navy)', opacity: 0.7, fontSize: '1.05rem' }}>Applying judgment responsibly.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <h3 className="mb-md" style={{ "fontFamily": "var(--font-serif)", "color": "var(--color-gold)" }}>Client Confirmation</h3>
-                            <p style={{ "lineHeight": "1.6", "color": "rgba(255, 255, 255, 0.8)" }}>Any changes are carried out only with client confirmation and aligned with the IPS.</p>
                         </motion.div>
-
-                        {/* Spacer to maintain gap on mobile when fully scrolled */}
-                        <div style={{ minWidth: "16px", flexShrink: 0 }}></div>
-                    </motion.div>
+                    </div>
                 </div>
             </section>
 
-            {/*  Our Mission  */}
-            <section className="section section--navy"
-                style={{ "background": "linear-gradient(145deg, var(--color-navy) 0%, var(--color-navy-dark) 100%)", "color": "white" }}>
+            {/*  Our Investment Framework  */}
+            <section className="section bg-white">
                 <div className="container">
                     <motion.div 
                         className="section-header text-center"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
+                        viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2 className="section-header__title" style={{ "color": "white" }}>Our Mission</h2>
-                        <div className="section-header__divider" style={{ "margin": "0 auto var(--space-md)" }}></div>
+                        <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', marginBottom: 'var(--space-md)' }}>Our Investment Framework</h2>
+                        <p className="text-muted" style={{ fontSize: '1.1rem', maxWidth: '700px', margin: '0 auto' }}>
+                            A systematic approach to wealth creation through clarity, reasoning, and behavioral discipline.
+                        </p>
                     </motion.div>
 
                     <motion.div 
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        transition={{ duration: 0.8 }}
-                        style={{ "maxWidth": "800px", "margin": "0 auto", "textAlign": "center" }}>
-                        <blockquote
-                            style={{ "fontSize": "24px", "fontWeight": "300", "lineHeight": "1.5", "fontStyle": "italic", "marginBottom": "var(--space-xl)", "color": "rgba(255,255,255,0.9)" }}>
-                            "To provide a clear, consistent, and process-driven financial distribution experience for retail
-                            investors."
-                        </blockquote>
+                        className="grid grid--2 mt-xl"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
+                        }}
+                        style={{ gap: 'var(--space-md)' }}
+                    >
+                        {/* 01 Understand */}
+                        <motion.div 
+                            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } } }}
+                            style={{ padding: 'var(--space-xl)', background: 'var(--color-surface)', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '24px', textAlign: 'center', display: 'flex', flexDirection: 'column' }}
+                        >
+                            <div style={{ width: '64px', height: '64px', background: 'rgba(15, 118, 110, 0.1)', color: 'var(--color-navy)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto var(--space-md)', position: 'relative', transform: 'rotate(45deg)' }}>
+                                <div style={{ transform: 'rotate(-45deg)' }}>
+                                    <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    </svg>
+                                </div>
+                                <div style={{ position: 'absolute', top: '-10px', right: '-10px', background: 'var(--color-navy)', color: 'white', width: '24px', height: '24px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 'bold', transform: 'rotate(-45deg)', border: '2px solid white' }}>
+                                    01
+                                </div>
+                            </div>
+                            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.4rem', marginBottom: 'var(--space-sm)' }}>Understand</h3>
+                            <p className="text-muted" style={{ fontSize: '0.95rem', flexGrow: 1, marginBottom: 'var(--space-lg)' }}>Moving beyond generic questionnaires to map your goals, risk comfort, and constraints through established financial principles.</p>
+                            <div style={{ height: '3px', background: 'var(--color-navy)', width: '40px', margin: '0 auto', borderRadius: '2px' }}></div>
+                        </motion.div>
 
-                        <div className="bento-grid"
-                            style={{ "gridTemplateColumns": "repeat(3, 1fr)", "gap": "var(--space-md)", "textAlign": "left" }}>
-                            <div
-                                style={{ "background": "rgba(255,255,255,0.05)", "padding": "var(--space-md)", "borderRadius": "12px", "borderTop": "3px solid var(--color-gold)" }}>
-                                <h4 style={{ "color": "var(--color-gold)", "marginBottom": "8px" }}>Documenting</h4>
-                                <p style={{ "color": "rgba(255,255,255,0.8)", "fontSize": "14px", "margin": "0" }}>Risk preferences</p>
+                        {/* 02 Architect */}
+                        <motion.div 
+                            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } } }}
+                            style={{ padding: 'var(--space-xl)', background: 'var(--color-surface)', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '24px', textAlign: 'center', display: 'flex', flexDirection: 'column' }}
+                        >
+                            <div style={{ width: '64px', height: '64px', background: 'rgba(15, 118, 110, 0.1)', color: 'var(--color-navy)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto var(--space-md)', position: 'relative', transform: 'rotate(45deg)' }}>
+                                <div style={{ transform: 'rotate(-45deg)' }}>
+                                    <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                                    </svg>
+                                </div>
+                                <div style={{ position: 'absolute', top: '-10px', right: '-10px', background: 'var(--color-navy)', color: 'white', width: '24px', height: '24px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 'bold', transform: 'rotate(-45deg)', border: '2px solid white' }}>
+                                    02
+                                </div>
                             </div>
-                            <div
-                                style={{ "background": "rgba(255,255,255,0.05)", "padding": "var(--space-md)", "borderRadius": "12px", "borderTop": "3px solid var(--color-gold)" }}>
-                                <h4 style={{ "color": "var(--color-gold)", "marginBottom": "8px" }}>Maintaining</h4>
-                                <p style={{ "color": "rgba(255,255,255,0.8)", "fontSize": "14px", "margin": "0" }}>Consistency in portfolio
-                                    structure</p>
+                            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.4rem', marginBottom: 'var(--space-sm)' }}>Architect</h3>
+                            <p className="text-muted" style={{ fontSize: '0.95rem', flexGrow: 1, marginBottom: 'var(--space-lg)' }}>Recommending investment options with explicit reasoning. You understand the 'why' behind every allocation and the risks involved.</p>
+                            <div style={{ height: '3px', background: 'var(--color-navy)', width: '40px', margin: '0 auto', borderRadius: '2px' }}></div>
+                        </motion.div>
+
+                        {/* 03 Execute */}
+                        <motion.div 
+                            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } } }}
+                            style={{ padding: 'var(--space-xl)', background: 'var(--color-surface)', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '24px', textAlign: 'center', display: 'flex', flexDirection: 'column' }}
+                        >
+                            <div style={{ width: '64px', height: '64px', background: 'rgba(15, 118, 110, 0.1)', color: 'var(--color-navy)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto var(--space-md)', position: 'relative', transform: 'rotate(45deg)' }}>
+                                <div style={{ transform: 'rotate(-45deg)' }}>
+                                    <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                                <div style={{ position: 'absolute', top: '-10px', right: '-10px', background: 'var(--color-navy)', color: 'white', width: '24px', height: '24px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 'bold', transform: 'rotate(-45deg)', border: '2px solid white' }}>
+                                    03
+                                </div>
                             </div>
-                            <div
-                                style={{ "background": "rgba(255,255,255,0.05)", "padding": "var(--space-md)", "borderRadius": "12px", "borderTop": "3px solid var(--color-gold)" }}>
-                                <h4 style={{ "color": "var(--color-gold)", "marginBottom": "8px" }}>Ensuring</h4>
-                                <p style={{ "color": "rgba(255,255,255,0.8)", "fontSize": "14px", "margin": "0" }}>Understanding of portfolio
-                                    reviews</p>
+                            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.4rem', marginBottom: 'var(--space-sm)' }}>Execute</h3>
+                            <p className="text-muted" style={{ fontSize: '0.95rem', flexGrow: 1, marginBottom: 'var(--space-lg)' }}>Streamlined transaction guidance to ensure your plan is accurately reflected in your portfolio without technical friction or common errors.</p>
+                            <div style={{ height: '3px', background: 'var(--color-navy)', width: '40px', margin: '0 auto', borderRadius: '2px' }}></div>
+                        </motion.div>
+
+                        {/* 04 Preserve */}
+                        <motion.div 
+                            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } } }}
+                            style={{ padding: 'var(--space-xl)', background: 'var(--color-surface)', border: '1px solid rgba(0,0,0,0.05)', borderRadius: '24px', textAlign: 'center', display: 'flex', flexDirection: 'column' }}
+                        >
+                            <div style={{ width: '64px', height: '64px', background: 'rgba(15, 118, 110, 0.1)', color: 'var(--color-navy)', borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto var(--space-md)', position: 'relative', transform: 'rotate(45deg)' }}>
+                                <div style={{ transform: 'rotate(-45deg)' }}>
+                                    <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                                    </svg>
+                                </div>
+                                <div style={{ position: 'absolute', top: '-10px', right: '-10px', background: 'var(--color-navy)', color: 'white', width: '24px', height: '24px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', fontWeight: 'bold', transform: 'rotate(-45deg)', border: '2px solid white' }}>
+                                    04
+                                </div>
                             </div>
-                        </div>
+                            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.4rem', marginBottom: 'var(--space-sm)' }}>Preserve</h3>
+                            <p className="text-muted" style={{ fontSize: '0.95rem', flexGrow: 1, marginBottom: 'var(--space-lg)' }}>Applying behavioral science to help you stay focused during volatility. We evaluate market shifts so you can decide whether to act or stay patient.</p>
+                            <div style={{ height: '3px', background: 'var(--color-navy)', width: '40px', margin: '0 auto', borderRadius: '2px' }}></div>
+                        </motion.div>
                     </motion.div>
                 </div>
             </section>
 
-            {/*  Important Disclosure  */}
-            <section className="section" style={{ "padding": "var(--space-md) 0" }}>
-                <div className="container text-center">
-                    <p className="text-small text-muted" style={{ "maxWidth": "600px", "margin": "0 auto", "opacity": "0.8" }}>
-                        <strong>Important Disclosure:</strong> Investments in securities markets are subject to market risks.
-                        Please read
-                        all related documents carefully before investing.
-                    </p>
+            {/*  Who We Work With  */}
+            <section className="section bg-light">
+                <div className="container">
+                    <motion.div 
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        style={{ background: '#f8fafc', padding: 'var(--space-2xl) var(--space-xl)', borderRadius: '24px', border: '1px solid rgba(0,0,0,0.05)', maxWidth: '1000px', margin: '0 auto' }}
+                    >
+                        <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', marginBottom: 'var(--space-md)' }}>Who We Work With</h2>
+                        <p style={{ fontSize: '1.1rem', color: 'var(--color-navy)', opacity: 0.8, marginBottom: 'var(--space-xl)', maxWidth: '800px' }}>
+                            We are selective in the investors we work with — not based on how much you invest, but on <strong>alignment</strong> with how we approach investing.
+                        </p>
+                        
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-lg)', marginBottom: 'var(--space-xl)' }}>
+                            <div style={{ display: 'flex', gap: '16px', flex: '1 1 40%', minWidth: '250px' }}>
+                                <div style={{ color: 'var(--color-navy)', marginTop: '2px', flexShrink: 0 }}>
+                                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <p style={{ margin: 0, color: 'var(--color-navy)', fontSize: '1rem', lineHeight: '1.6' }}>Focused on building wealth over a <strong>multi-year horizon</strong>.</p>
+                            </div>
+                            <div style={{ display: 'flex', gap: '16px', flex: '1 1 40%', minWidth: '250px' }}>
+                                <div style={{ color: 'var(--color-navy)', marginTop: '2px', flexShrink: 0 }}>
+                                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <p style={{ margin: 0, color: 'var(--color-navy)', fontSize: '1rem', lineHeight: '1.6' }}>Comfortable following <strong>structure</strong> over market noise.</p>
+                            </div>
+                            <div style={{ display: 'flex', gap: '16px', flex: '1 1 40%', minWidth: '250px' }}>
+                                <div style={{ color: 'var(--color-navy)', marginTop: '2px', flexShrink: 0 }}>
+                                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <p style={{ margin: 0, color: 'var(--color-navy)', fontSize: '1rem', lineHeight: '1.6' }}>Willing to take the time to <strong>understand</strong> positioning.</p>
+                            </div>
+                            <div style={{ display: 'flex', gap: '16px', flex: '1 1 40%', minWidth: '250px' }}>
+                                <div style={{ color: 'var(--color-navy)', marginTop: '2px', flexShrink: 0 }}>
+                                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <p style={{ margin: 0, color: 'var(--color-navy)', fontSize: '1rem', lineHeight: '1.6' }}>Aligned with a <strong>disciplined process</strong> built on research.</p>
+                            </div>
+                        </div>
+
+                        <p style={{ margin: 0, textAlign: 'center', fontStyle: 'italic', color: 'var(--color-navy)', opacity: 0.7, fontSize: '0.95rem', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: 'var(--space-md)' }}>
+                            This allows us to dedicate meaningful time and attention to each investor, maintaining a consistent, high-quality experience.
+                        </p>
+                    </motion.div>
                 </div>
             </section>
 
@@ -666,11 +410,8 @@ export default function ClientServices() {
                         transition={{ duration: 0.6 }}
                     >
                         <h2>Start a Conversation</h2>
-                        <p>
-                            Begin with a no-obligation consultation to discuss your needs and explore
-                            if our approach is right for you.
-                        </p>
-                        <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="/schedule" className="btn btn--white">Schedule Consultation</motion.a>
+                        <p className="cta-tagline mb-md" style={{ "fontSize": "1.1rem", "fontWeight": "500", "color": "rgba(255,255,255,0.8)", "letterSpacing": "0.5px" }}>Let's understand your goals and see if our approach is right for you.</p>
+                        <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="/schedule" className="btn btn--white mt-md">Schedule Consultation</motion.a>
                     </motion.div>
                 </div>
             </section>
@@ -680,17 +421,17 @@ export default function ClientServices() {
                 <div className="container">
                     <div className="footer__grid">
                         <div className="footer__brand">
-                            <div className="nav__logo">Sound Thesis</div>
-                            <p>Institutional-grade wealth management powered by accessible research, fiduciary transparency,
-                                and behavioral coaching.</p>
+                            <div className="nav__logo">SoundThesis</div>
+                            <p>Bringing structure, clarity, and consistency to your investment journey.</p>
                         </div>
                         <div className="footer__links">
-                            <h4>Research</h4>
-                            <a href="/thesis-notes">Thesis Notes</a>                        </div>
+                            <a href="/thesis-notes">Thesis Notes</a>
+                            <a href="/methodology">Methodology</a>
+                        </div>
                         <div className="footer__links">
                             <h4>Services</h4>
                             <a href="/services">Wealth Management</a>
-                            <a href="/why-us">Why We Exist</a>
+                            <a href="/about-us">Why we exist</a>
                         </div>
                         <div className="footer__links">
                             <h4>Connect</h4>
@@ -698,9 +439,15 @@ export default function ClientServices() {
                             <a href="/schedule">Schedule Consultation</a>
                         </div>
                     </div>
+                    <div className="footer__disclosure" style={{ "marginTop": "var(--space-xl)", "paddingTop": "var(--space-lg)", "borderTop": "1px solid rgba(255,255,255,0.1)", "fontSize": "0.85rem", "color": "rgba(255,255,255,0.5)", "textAlign": "left" }}>
+                        <h5 style={{ "color": "rgba(255,255,255,0.8)", "marginBottom": "var(--space-xs)", "fontSize": "0.9rem", "textTransform": "uppercase" }}>Important Disclosure</h5>
+                        <p className="mb-xs">SoundThesis operates as a Mutual Fund Distributor and facilitates investments based on your goals, risk profile, and suitability.</p>
+                        <p className="mb-xs">All investments are made in your own account with your approval.</p>
+                        <p>Investments in securities markets are subject to market risks. Please read all related documents carefully before investing.</p>
+                    </div>
                     <div className="footer__bottom">
-                        <p>&copy; 2024 Sound Thesis. All rights reserved.</p>
-                        <p>Fiduciary Alignment. Research-Driven. Behavioral Focus. Standardized Processes.</p>
+                        <p>&copy; 2024 SoundThesis. All rights reserved.</p>
+                        <p>Democratized Research. Transparent Wealth Management.</p>
                     </div>
                 </div>
             </footer>
