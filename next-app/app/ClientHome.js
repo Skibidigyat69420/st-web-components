@@ -35,17 +35,7 @@ export default function ClientHome() {
               transition={{ type: "spring", stiffness: 80, damping: 20, delay: 0.1 }}
             >
               <p className="hero__tagline mb-md" style={{ "fontSize": "1.1rem", "fontWeight": "500", "color": "white", "opacity": "0.9", "letterSpacing": "0.5px" }}>Investor-first. Research-driven. Trusted experts.</p>
-              <div className="arn-badges-placeholder mb-lg" style={{ "minHeight": "40px", "display": "flex", "alignItems": "flex-start", "flexDirection": "column", "gap": "10px" }}>
-                <div style={{ display: "inline-flex", alignItems: "center", background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "20px", padding: "6px 16px", color: "white", fontSize: "0.9rem", fontWeight: "500" }}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: "8px", color: "var(--color-gold)" }}>
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  </svg>
-                  ARN-XXXXXX / PMS-XXXXXX
-                </div>
-                <div style={{ color: "rgba(255,255,255,0.7)", fontSize: "0.85rem", fontStyle: "italic", marginLeft: "4px" }}>
-                  AMFI-registered Mutual Fund Distributor
-                </div>
-              </div>
+
               <motion.h1 
                 className="hero__title"
                 initial={{ opacity: 0, y: 40, rotateX: 15 }}
