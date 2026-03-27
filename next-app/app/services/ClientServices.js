@@ -15,11 +15,10 @@ export default function ClientServices() {
                         <span></span>
                     </button>
                     <ul className="nav__links">
-                        <li><a href="/thesis-notes" className="nav__link">Thesis Notes</a></li>
+                        <li><a href="/" className="nav__link">Home</a></li>
+                        <li><a href="/about-us" className="nav__link">Our Philosophy</a></li>
                         <li><a href="/services" className="nav__link nav__link--active">Services</a></li>
-                        <li><a href="/about-us" className="nav__link">Why we exist</a></li>
-                        <li><a href="/calculators" className="nav__link">Calculators</a></li>
-                        <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Schedule Consultation</a></li>
+                        <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -55,14 +54,6 @@ export default function ClientServices() {
                         <p style={{ margin: 0, fontSize: '1.1rem', color: 'white', lineHeight: '1.6' }}>
                             <strong>Our focus is simple:</strong> <span style={{ color: 'rgba(255,255,255,0.8)' }}>help you avoid costly mistakes, stay disciplined, and build long-term wealth with clarity and confidence.</span>
                         </p>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.3 }}
-                    >
-                        <a href="/schedule" className="btn btn--white" style={{ padding: '16px 32px', fontSize: '1.1rem', background: 'var(--color-white)', color: 'var(--color-navy)' }}>Start a Conversation</a>
                     </motion.div>
                 </div>
             </section>
@@ -105,7 +96,7 @@ export default function ClientServices() {
                             </div>
                             <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: 'var(--space-sm)' }}>Mutual Funds</h3>
                             <p className="text-muted mb-lg" style={{ fontSize: '0.95rem', flexGrow: 1 }}>Simple, diversified, and flexible. Best for most investors starting or building long-term wealth.</p>
-                            <div style={{ color: 'var(--color-navy)', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase' }}>IDEAL FOR MOST</div>
+                            <div style={{ color: 'var(--color-navy)', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase' }}>FOR MOST LONG-TERM INVESTORS</div>
                         </motion.div>
 
                         {/* PMS */}
@@ -121,7 +112,7 @@ export default function ClientServices() {
                             </div>
                             <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: 'var(--space-sm)' }}>PMS</h3>
                             <p className="text-muted mb-lg" style={{ fontSize: '0.95rem', flexGrow: 1 }}>Professionally managed with concentrated strategies and customization.</p>
-                            <div style={{ color: 'var(--color-navy)', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase' }}>SCALE: ₹50L+</div>
+                            <div style={{ color: 'var(--color-navy)', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase' }}>FOR LARGER (₹50L+), CUSTOMIZED PORTFOLIOS</div>
                         </motion.div>
 
                         {/* AIF */}
@@ -137,7 +128,7 @@ export default function ClientServices() {
                             </div>
                             <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: 'var(--space-sm)' }}>AIF</h3>
                             <p className="text-muted mb-lg" style={{ fontSize: '0.95rem', flexGrow: 1 }}>Access to private markets, venture capital, and non-traditional opportunities.</p>
-                            <div style={{ color: '#0F766E', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase' }}>EXPERIENCED INVESTORS</div>
+                            <div style={{ color: '#0F766E', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase' }}>FOR EXPERIENCED INVESTORS EXPLORING ALTERNATIVE ASSETS</div>
                         </motion.div>
 
                         {/* SIF */}
@@ -153,8 +144,8 @@ export default function ClientServices() {
                                 </svg>
                             </div>
                             <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: 'var(--space-sm)' }}>SIF</h3>
-                            <p className="text-muted mb-lg" style={{ fontSize: '0.95rem', flexGrow: 1 }}>A new hybrid category bridging mutual funds and PMS. Offers flexibility for sophisticated investors using strategies like long-short equity, with a ₹10 lakh minimum.</p>
-                            <div style={{ color: 'var(--color-gold)', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase' }}>TARGETED EXPOSURE</div>
+                            <p className="text-muted mb-lg" style={{ fontSize: '0.95rem', flexGrow: 1 }}>A hybrid category between mutual funds and PMS, offering more flexibility and strategy-driven portfolio construction.</p>
+                            <div style={{ color: 'var(--color-gold)', fontSize: '0.8rem', fontWeight: '700', letterSpacing: '1px', textTransform: 'uppercase' }}>FOR TARGETED EXPOSURE TO SPECIFIC SECTORS AND THEMES (₹10L+)</div>
                         </motion.div>
                     </motion.div>
                 </div>
@@ -173,7 +164,7 @@ export default function ClientServices() {
                         >
                             <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', marginBottom: 'var(--space-md)', color: 'white' }}>Why This Matters for You</h2>
                             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', marginBottom: 'var(--space-xl)', lineHeight: '1.6' }}>
-                                Today, many investors struggle to know whether guidance is truly in their interest or if decisions are based on research vs. incentives.
+                                Today, many investors struggle to know whether the guidance they receive is truly aligned with their needs, or influenced by the incentives of those offering or facilitating investments.
                             </p>
                             
                             <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -183,7 +174,7 @@ export default function ClientServices() {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                         </svg>
                                     </div>
-                                    <p style={{ margin: 0, color: 'rgba(255,255,255,0.9)', lineHeight: '1.6' }}><strong>Portfolio Structure:</strong> Long-term outcomes are driven by management over time, not just individual picks.</p>
+                                    <p style={{ margin: 0, color: 'rgba(255,255,255,0.9)', lineHeight: '1.6' }}><strong>Portfolio Allocation:</strong> Long-term outcomes are largely driven by asset allocation, not individual investment selection.</p>
                                 </li>
                                 <li style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
                                     <div style={{ color: 'var(--color-navy)', background: 'white', borderRadius: '50%', padding: '4px', flexShrink: 0, marginTop: '4px' }}>
@@ -191,7 +182,7 @@ export default function ClientServices() {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                         </svg>
                                     </div>
-                                    <p style={{ margin: 0, color: 'rgba(255,255,255,0.9)', lineHeight: '1.6' }}><strong>Avoid Emotional Friction:</strong> Reactive decisions are one of the biggest reasons for underperformance.</p>
+                                    <p style={{ margin: 0, color: 'rgba(255,255,255,0.9)', lineHeight: '1.6' }}><strong>Behavioral Discipline:</strong> Investor behavior during market volatility often has a greater impact on outcomes than the investments themselves.</p>
                                 </li>
                             </ul>
                         </motion.div>
@@ -209,22 +200,22 @@ export default function ClientServices() {
                                 <div style={{ display: 'flex', gap: '24px' }}>
                                     <div style={{ color: 'var(--color-gold)', fontWeight: '700', fontSize: '1.25rem', marginTop: '2px' }}>01</div>
                                     <div>
-                                        <h4 style={{ margin: '0 0 6px 0', fontSize: '1.15rem' }}>Rigorous Research</h4>
-                                        <p style={{ margin: 0, color: 'var(--color-navy)', opacity: 0.7, fontSize: '1.05rem' }}>To evaluate real opportunities and risks.</p>
+                                        <h4 style={{ margin: '0 0 6px 0', fontSize: '1.15rem' }}>Research-Driven Investment Decisions</h4>
+                                        <p style={{ margin: 0, color: 'var(--color-navy)', opacity: 0.7, fontSize: '1.05rem' }}>Evaluating opportunities and risks with rigor and clarity.</p>
                                     </div>
                                 </div>
                                 <div style={{ display: 'flex', gap: '24px' }}>
                                     <div style={{ color: 'var(--color-gold)', fontWeight: '700', fontSize: '1.25rem', marginTop: '2px' }}>02</div>
                                     <div>
-                                        <h4 style={{ margin: '0 0 6px 0', fontSize: '1.15rem' }}>Best-in-class Processes</h4>
-                                        <p style={{ margin: 0, color: 'var(--color-navy)', opacity: 0.7, fontSize: '1.05rem' }}>Ensuring consistency and discipline.</p>
+                                        <h4 style={{ margin: '0 0 6px 0', fontSize: '1.15rem' }}>Disciplined Portfolio Construction Process</h4>
+                                        <p style={{ margin: 0, color: 'var(--color-navy)', opacity: 0.7, fontSize: '1.05rem' }}>Ensuring consistency and alignment through market cycles.</p>
                                     </div>
                                 </div>
                                 <div style={{ display: 'flex', gap: '24px' }}>
                                     <div style={{ color: 'var(--color-gold)', fontWeight: '700', fontSize: '1.25rem', marginTop: '2px' }}>03</div>
                                     <div>
                                         <h4 style={{ margin: '0 0 6px 0', fontSize: '1.15rem' }}>Highly Qualified Professionals</h4>
-                                        <p style={{ margin: 0, color: 'var(--color-navy)', opacity: 0.7, fontSize: '1.05rem' }}>Applying judgment responsibly.</p>
+                                        <p style={{ margin: 0, color: 'var(--color-navy)', opacity: 0.7, fontSize: '1.05rem' }}>Experts to help you navigate uncertainty and support sound decision-making.</p>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +241,7 @@ export default function ClientServices() {
                     </motion.div>
 
                     <motion.div 
-                        className="grid grid--2 mt-xl"
+                        className="grid grid--4 mt-xl"
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
@@ -411,7 +402,7 @@ export default function ClientServices() {
                     >
                         <h2>Start a Conversation</h2>
                         <p className="cta-tagline mb-md" style={{ "fontSize": "1.1rem", "fontWeight": "500", "color": "rgba(255,255,255,0.8)", "letterSpacing": "0.5px" }}>Let's understand your goals and see if our approach is right for you.</p>
-                        <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="/schedule" className="btn btn--white mt-md">Schedule Consultation</motion.a>
+                        <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} href="/schedule" className="btn btn--white mt-md">Contact Us</motion.a>
                     </motion.div>
                 </div>
             </section>
@@ -421,22 +412,22 @@ export default function ClientServices() {
                 <div className="container">
                     <div className="footer__grid">
                         <div className="footer__brand">
-                            <div className="nav__logo">SoundThesis</div>
-                            <p>Bringing structure, clarity, and consistency to your investment journey.</p>
+                            <div className="nav__logo" style={{ color: 'white', fontSize: '24px', marginBottom: '20px' }}>SoundThesis</div>
+                            <p>Investor-first. Research-driven. Trusted experts.</p>
                         </div>
                         <div className="footer__links">
-                            <a href="/thesis-notes">Thesis Notes</a>
+                            <h4>RESEARCH</h4>
                             <a href="/methodology">Methodology</a>
                         </div>
                         <div className="footer__links">
-                            <h4>Services</h4>
+                            <h4>SERVICES</h4>
                             <a href="/services">Wealth Management</a>
-                            <a href="/about-us">Why we exist</a>
+                            <a href="/about-us">Our Philosophy</a>
                         </div>
                         <div className="footer__links">
-                            <h4>Connect</h4>
+                            <h4>CONNECT</h4>
                             <a href="mailto:research@soundthesis.com">research@soundthesis.com</a>
-                            <a href="/schedule">Schedule Consultation</a>
+                            <a href="/schedule">Contact Us</a>
                         </div>
                     </div>
                     <div className="footer__disclosure" style={{ "marginTop": "var(--space-xl)", "paddingTop": "var(--space-lg)", "borderTop": "1px solid rgba(255,255,255,0.1)", "fontSize": "0.85rem", "color": "rgba(255,255,255,0.5)", "textAlign": "left" }}>
@@ -445,9 +436,8 @@ export default function ClientServices() {
                         <p className="mb-xs">All investments are made in your own account with your approval.</p>
                         <p>Investments in securities markets are subject to market risks. Please read all related documents carefully before investing.</p>
                     </div>
-                    <div className="footer__bottom">
-                        <p>&copy; 2024 SoundThesis. All rights reserved.</p>
-                        <p>Democratized Research. Transparent Wealth Management.</p>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                        <p>© 2026 SoundThesis. All rights reserved.</p>
                     </div>
                 </div>
             </footer>

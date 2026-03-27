@@ -430,11 +430,11 @@ export default function SchedulePage() {
             <span></span>
             <span></span>
           </button>
-          <ul className="nav__links">            <li><a href="/thesis-notes" className="nav__link">Thesis Notes</a></li>
+          <ul className="nav__links">
+            <li><a href="/" className="nav__link">Home</a></li>
+            <li><a href="/about-us" className="nav__link">Our Philosophy</a></li>
             <li><a href="/services" className="nav__link">Services</a></li>
-            <li><a href="/about-us" className="nav__link">About us</a></li>
-            <li><a href="/calculators" className="nav__link">Calculators</a></li>
-            <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Schedule Consultation</a></li>
+            <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Contact Us</a></li>
           </ul>
         </div>
       </nav>
@@ -592,27 +592,25 @@ export default function SchedulePage() {
           <div className="footer__grid">
             <div className="footer__brand">
               <div className="nav__logo">SoundThesis</div>
-              <p>Democratized financial research and accessible wealth management. No minimum investment barriers.</p>
+              <p>Investor-first. Research-driven. Trusted experts.</p>
             </div>
             <div className="footer__links">
               <h4>RESEARCH</h4>
-              <a href="/thesis-notes">Thesis Notes</a>
               <a href="/methodology">Methodology</a>
             </div>
             <div className="footer__links">
-              <h4>Services</h4>
+              <h4>SERVICES</h4>
               <a href="/services">Wealth Management</a>
-              <a href="/about-us">About us</a>
+              <a href="/about-us">Our Philosophy</a>
             </div>
             <div className="footer__links">
-              <h4>Connect</h4>
+              <h4>CONNECT</h4>
               <a href="mailto:research@soundthesis.com">research@soundthesis.com</a>
-              <a href="/schedule">Schedule Consultation</a>
+              <a href="/schedule">Contact Us</a>
             </div>
           </div>
           <div className="footer__bottom">
-            <p>&copy; 2024 SoundThesis. All rights reserved.</p>
-            <p>Democratized Research. Transparent Wealth Management.</p>
+            <p>&copy; 2026 SoundThesis. All rights reserved.</p>
           </div>
         </div>
       </footer>

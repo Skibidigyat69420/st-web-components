@@ -51,11 +51,11 @@ export default function ThesisNoteDetail() {
             <nav className="nav" role="navigation">
                 <div className="nav__inner">
                     <a href="/" className="nav__logo">SoundThesis</a>
-                    <ul className="nav__links">                        <li><a href="/thesis-notes" className="nav__link nav__link--active">Thesis Notes</a></li>
+                    <ul className="nav__links">
+                        <li><a href="/" className="nav__link">Home</a></li>
+                        <li><a href="/about-us" className="nav__link">Our Philosophy</a></li>
                         <li><a href="/services" className="nav__link">Services</a></li>
-                        <li><a href="/about-us" className="nav__link">About us</a></li>
-                        <li><a href="/calculators" className="nav__link">Calculators</a></li>
-                        <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Schedule Consultation</a></li>
+                        <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>

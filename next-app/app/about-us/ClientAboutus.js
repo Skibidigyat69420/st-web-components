@@ -30,11 +30,10 @@ export default function ClientAboutus() {
                         <span></span>
                     </button>
                     <ul className="nav__links">
-                        <li><a href="/thesis-notes" className="nav__link">Thesis Notes</a></li>
+                        <li><a href="/" className="nav__link">Home</a></li>
+                        <li><a href="/about-us" className="nav__link nav__link--active">Our Philosophy</a></li>
                         <li><a href="/services" className="nav__link">Services</a></li>
-                        <li><a href="/about-us" className="nav__link nav__link--active">About us</a></li>
-                        <li><a href="/calculators" className="nav__link">Calculators</a></li>
-                        <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Schedule Consultation</a></li>
+                        <li className="nav__cta"><a href="/schedule" className="btn btn--primary btn--small">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -51,12 +50,9 @@ export default function ClientAboutus() {
                         className="hero__title"
                         style={{ color: 'var(--color-white)' }}
                     >
-                        About us
+                        Our Philosophy
                     </motion.h1>
                     <motion.div className="hero__divider" style={{ background: 'var(--color-gold)', width: '60px', height: '3px', margin: '20px auto' }}></motion.div>
-                    <motion.p className="hero__description" style={{ color: 'rgba(255,255,255,0.9)' }}>
-                        Institutional-grade research and disciplined wealth management for long-term investors.
-                    </motion.p>
                 </motion.div>
             </section>
 
@@ -72,12 +68,12 @@ export default function ClientAboutus() {
                         <motion.h2 className="section-header__title" style={{ textAlign: 'center', marginBottom: 'var(--space-xl)' }}>Why Sound Thinking Matters</motion.h2>
                         
                         <motion.div className="manifesto-letter" style={{ fontSize: '18px', lineHeight: '1.8', marginBottom: 'var(--space-2xl)', borderLeft: '4px solid var(--color-gold)', paddingLeft: '30px' }}>
-                            <p>Building wealth is not about predicting or reacting to markets.</p>
-                            <p>It is about protecting and growing capital by making thoughtful decisions under uncertainty — across changing economic conditions, evolving opportunities, and unpredictable market cycles.</p>
-                            <p>Markets are complex. Investment products are numerous. And short-term movements often distract investors from long-term goals.</p>
-                            <p style={{ fontWeight: '600', color: 'var(--color-navy)', fontSize: '22px', margin: '30px 0' }}>Successful investing requires something more fundamental: <em>sound thinking applied consistently over time.</em></p>
-                            <p>Sound thinking involves rigorous research, disciplined analysis, and professional judgment to evaluate opportunities, manage risks, and remain focused on long-term wealth creation.</p>
-                            <p>At SoundThesis, every investment decision begins with a <strong>clear investment thesis</strong> — a reasoned explanation of why an investment belongs in a portfolio and how it contributes to long-term wealth creation. This means avoiding unnecessary risks and being selective about what we include in a portfolio.</p>
+                            <p>Building wealth is not about predicting short-term market movements or reacting to every change. It is about making sound decisions under uncertainty — using research and disciplined thinking to understand risks, evaluate opportunities, and allocate capital across evolving market cycles.</p>
+                            <p>Markets are complex. Investment products are numerous. And short-term movements often distract from long-term goals.</p>
+                            <p>Most investors do not struggle due to lack of information — they struggle to filter what matters and act on it consistently over time.</p>
+                            <p style={{ fontWeight: '600', color: 'var(--color-navy)', fontSize: '22px', margin: '30px 0' }}>Our Investment Thesis</p>
+                            <p>Sound thinking involves rigorous analysis, a clear understanding of risk, and the ability to make consistent, well-reasoned decisions — particularly in situations where markets are uncertain and the right course of action is not immediately clear.</p>
+                            <p>At SoundThesis, every investment decision begins with a <strong>clear investment thesis</strong> — a reasoned explanation of why an investment belongs in a portfolio and how it contributes to long-term wealth creation. This means being selective and taking risk only when it is understood and appropriately compensated.</p>
                             <p>This discipline helps investors navigate markets with clarity, confidence, and perspective.</p>
                         </motion.div>
 
@@ -105,7 +101,7 @@ export default function ClientAboutus() {
                         viewport={{ once: true }}
                         variants={fadeIn}
                     >
-                        <h2 className="section-header__title" style={{ textTransform: 'uppercase', letterSpacing: '2px', fontSize: '24px' }}>The Investment Thesis</h2>
+                        <h2 className="section-header__title" style={{ letterSpacing: '2px', fontSize: '24px' }}>Our investment thesis</h2>
                     </motion.div>
                     
                     <motion.div 
@@ -200,7 +196,7 @@ export default function ClientAboutus() {
                         >
                             <div className="card" style={{ backgroundColor: 'var(--color-navy)', color: 'white', padding: '48px' }}>
                                 <h3 style={{ color: 'white', marginBottom: '24px' }}>Professional Expertise</h3>
-                                <p style={{ opacity: 0.9, marginBottom: '32px' }}>Guidance from CFA-designated professionals who prioritize clear communication. We believe knowledge builds insight, and transparency builds trust.</p>
+                                <p style={{ opacity: 0.9, marginBottom: '32px' }}>Guidance from highly qualified finance professionals who prioritize clear communication. We believe knowledge builds insight, and transparency builds trust.</p>
                                 <div style={{ borderTop: '1px solid rgba(255,255,255,0.2)', paddingTop: '24px' }}>
                                     <span style={{ display: 'block', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '8px', opacity: 0.6 }}>CULTURE</span>
                                     <p style={{ fontSize: '20px', fontWeight: '500', marginBottom: 0 }}>Founded by Educators. Driven by Learning.</p>
@@ -222,7 +218,7 @@ export default function ClientAboutus() {
                         variants={fadeIn}
                     >
                         <h2 style={{ color: 'white', marginBottom: '24px' }}>Serving the Underserved</h2>
-                        <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: '800px', margin: '0 auto' }}>Access to financial guidance shouldn't depend on portfolio size. We dedicate <strong>20% of our advisors' time</strong> to families with low investable income.</p>
+                        <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: '800px', margin: '0 auto' }}>Access to financial guidance shouldn't depend on portfolio size. We dedicate <strong>20% of our time</strong> to families with low investable income.</p>
                     </motion.div>
 
                     <div className="grid grid--2">
@@ -240,7 +236,7 @@ export default function ClientAboutus() {
                             whileHover={{ translateY: -5 }}
                         >
                             <h4 style={{ color: 'var(--color-gold)', marginBottom: '16px' }}>Broader Perspective</h4>
-                            <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '15px' }}>Helping underserved investors reminds us that wealth management is about stability, dignity, and opportunity for all.</p>
+                            <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '15px' }}>Working closely with underserved investors reinforces that financial decisions have real consequences — reflected in our focus on thoughtful capital allocation and long-term wealth creation</p>
                         </motion.div>
                     </div>
                 </div>
@@ -296,16 +292,16 @@ export default function ClientAboutus() {
                     >
                         <h2 style={{ fontSize: '42px', marginBottom: '16px' }}>See Our Thinking in Practice</h2>
                         <p style={{ fontSize: '20px', color: 'var(--color-body-light)', maxWidth: '700px', margin: '0 auto 40px' }}>
-                            Understand our philosophy by seeing how research and disciplined judgment guide our approach.
+                            If you are looking for a more structured and thoughtful approach to investing, we would be happy to understand your goals and explore whether we are the right fit to work together.
                         </p>
                         <motion.a 
                             whileHover={{ scale: 1.05 }} 
                             whileTap={{ scale: 0.95 }} 
-                            href="/thesis-notes" 
+                            href="/schedule" 
                             className="btn btn--primary"
-                            style={{ padding: '20px 48px', fontSize: '16px' }}
+                            style={{ padding: '20px 48px', fontSize: '16px', textTransform: 'uppercase' }}
                         >
-                            READ THESIS NOTES
+                            Contact Us
                         </motion.a>
                     </motion.div>
                 </div>
@@ -317,22 +313,21 @@ export default function ClientAboutus() {
                     <div className="footer__grid">
                         <div className="footer__brand">
                             <div className="nav__logo" style={{ color: 'white', fontSize: '24px', marginBottom: '20px' }}>SoundThesis</div>
-                            <p>Disciplined investment research and accessible wealth management. No minimum investment barriers.</p>
+                            <p>Investor-first. Research-driven. Trusted experts.</p>
                         </div>
                         <div className="footer__links">
                             <h4>RESEARCH</h4>
-                            <a href="/thesis-notes">Thesis Notes</a>
                             <a href="/methodology">Methodology</a>
                         </div>
                         <div className="footer__links">
                             <h4>SERVICES</h4>
                             <a href="/services">Wealth Management</a>
-                            <a href="/about-us">About us</a>
+                            <a href="/about-us">Our Philosophy</a>
                         </div>
                         <div className="footer__links">
                             <h4>CONNECT</h4>
                             <a href="mailto:research@soundthesis.com">research@soundthesis.com</a>
-                            <a href="/schedule">Schedule Consultation</a>
+                            <a href="/schedule">Contact Us</a>
                         </div>
                     </div>
                 </div>
