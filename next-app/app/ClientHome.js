@@ -206,7 +206,7 @@ export default function ClientHome() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2>Start by Reading Our Research</h2>
+            <h2>Talk to Us</h2>
             <p className="cta-tagline mb-md" style={{ "fontSize": "1.1rem", "fontWeight": "500", "color": "rgba(255,255,255,0.8)", "letterSpacing": "0.5px" }}>Investor-first. Research-driven. Trusted experts.</p>
             <p>
               Reach out to us and see if our approach resonates with you.
